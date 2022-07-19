@@ -1,0 +1,34 @@
+.o-header {
+  &--title {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  &--image {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 47vw;
+  }
+  &--menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    margin-left: auto;
+    justify-content: space-between;
+    list-style: none;
+    height: 50px;
+    margin-bottom: 11vw;
+    &-item {
+      width: 25%;
+      text-align: center;
+    }
+  }
+  &--content {
+    z-index: 3;
+    position: relative;
+  }
+}
