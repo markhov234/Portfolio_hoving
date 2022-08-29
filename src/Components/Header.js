@@ -22,11 +22,6 @@ const Header = (props) => {
         </ul>
         <h1 className="o-header--title">{props.title}</h1>
       </div>
-      <img
-        className="o-header--image"
-        src="http://fakeimg.pl/1880x550/"
-        alt="Décorative"
-      ></img>
     </header>
   );
 };
