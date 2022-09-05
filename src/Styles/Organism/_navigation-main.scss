@@ -1,0 +1,41 @@
+.o-navigation--main {
+  padding-top: 3vw;
+  display: flex;
+  justify-content: flex-end;
+  top: -100px;
+  right: -100px;
+  position: fixed;
+  z-index: 2;
+  &-span {
+    // position: fixed;
+    padding-right: 3vw;
+    padding-top: 3vw;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 3;
+  }
+  &-icon {
+    width: 28px;
+    height: 28px;
+  }
+  &--menu {
+    top: 135px;
+    right: 135px;
+    position: relative;
+    text-decoration: none;
+    &-zone {
+      background-color: red;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+    }
+    & ul {
+      list-style-type: none;
+      & a {
+        text-decoration: none;
+        color: #efe9e9;
+      }
+    }
+  }
+}

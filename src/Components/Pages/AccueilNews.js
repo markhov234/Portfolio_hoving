@@ -1,6 +1,6 @@
 const AccueilNews = (props) => {
   return (
-    <accueilnews className="o-accueilNews">
+    <div className="o-accueilNews">
       <div className="o-accueilNews--envelope">
         {/* <h1>JE SUIS LA PARTIE NEWS</h1> */}
         <div className="o-accueilNews--article-main">
@@ -50,7 +50,7 @@ const AccueilNews = (props) => {
           </div>
         </div>
       </div>
-    </accueilnews>
+    </div>
   );
 };
 
