@@ -1,40 +1,92 @@
 .o-navigation--main {
-  padding-top: 3vw;
   display: flex;
   justify-content: flex-end;
-  top: -100px;
-  right: -100px;
+  top: 0px;
+  height: 50px;
+  background-color: transparent;
+  width: 100%;
   position: fixed;
   z-index: 2;
+  transition: ease-in-out 0.3s;
+
+  &.background {
+    background-color: #625f93;
+  }
   &-span {
-    // position: fixed;
     padding-right: 3vw;
     padding-top: 3vw;
     position: absolute;
-    top: 100px;
-    right: 100px;
+    cursor: pointer;
     z-index: 3;
   }
   &-icon {
-    width: 28px;
-    height: 28px;
+    &.close {
+      width: 28px;
+      height: 28px;
+      transition: 0.5s ease-in-out;
+    }
+    &.open {
+      width: 28px;
+      height: 28px;
+      transition: 0.5s ease-in-out;
+    }
   }
   &--menu {
-    top: 135px;
-    right: 135px;
-    position: relative;
     text-decoration: none;
+    transition: ease-out 0.3s;
+    &.open {
+      background-color: #625f93;
+      width: 100%;
+      height: 600px;
+      // right: 140px;
+      border-radius: 15% 0%;
+      z-index: 2;
+      & .o-navigation--main--menu-zone {
+        position: relative;
+        left: 0;
+        transition: ease-out 0.3s;
+      }
+    }
+    &.close {
+      transition: ease-in 0.4s;
+      background-color: #200ac2;
+      width: 0px;
+      height: 0px;
+
+      & .o-navigation--main--menu-zone {
+        position: relative;
+        left: 200px;
+        top: -200px;
+        transition: ease-in 0.4s;
+        opacity: 0;
+      }
+    }
     &-zone {
-      background-color: red;
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
+      position: relative;
+      top: 65px;
+      z-index: 9;
     }
     & ul {
       list-style-type: none;
+      padding: 0;
       & a {
         text-decoration: none;
         color: #efe9e9;
+        width: 100%;
+      }
+      & li {
+        padding: 20px 0;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: normal;
+        transition: ease-in-out 0.2s;
+        display: flex;
+        text-decoration: none;
+        &:hover {
+          background-color: #200ac2;
+          font-weight: 500;
+          cursor: pointer;
+        }
       }
     }
   }

@@ -1,10 +1,12 @@
 @use "./norms";
 @use "./Organism/header";
 @use "./Organism/accueil-news";
+@use "./Organism/background";
 @use "./Organism/navigation-main";
+@use "./Pages/accueil";
 @use "./Atoms/link";
 
 html {
-  background-color: #403c3c;
-  color: #efe9e9;
+  background-color: #e6e2de;
+  color: black;
 }
