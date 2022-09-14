@@ -6,7 +6,7 @@
   background-color: transparent;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   transition: ease-in-out 0.3s;
 
   &.background {
@@ -17,7 +17,7 @@
     padding-top: 3vw;
     position: absolute;
     cursor: pointer;
-    z-index: 3;
+    z-index: 5;
   }
   &-icon {
     &.close {
@@ -40,7 +40,7 @@
       height: 600px;
       // right: 140px;
       border-radius: 15% 0%;
-      z-index: 2;
+      z-index: 4;
       & .o-navigation--main--menu-zone {
         position: relative;
         left: 0;
@@ -64,7 +64,7 @@
     &-zone {
       position: relative;
       top: 65px;
-      z-index: 9;
+      z-index: 4;
     }
     & ul {
       list-style-type: none;
