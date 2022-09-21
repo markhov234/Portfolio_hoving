@@ -3,11 +3,44 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    position: inherit;
+    position: relative;
+    overflow: hidden;
 
+    @media (min-width: $b-mobile) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    &-figcaption {
+      position: relative;
+      top: -185px;
+      text-align: center;
+      margin: 0 20px;
+      background-color: white;
+      border-radius: 5%;
+      opacity: 0;
+      transition: ease-in-out 0.2s;
+      @media (min-width: $b-mobile) {
+        top: -218px;
+        font-size: 1.5rem;
+      }
+    }
     &-figure {
-      font-size: 10px;
-
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: ease-in-out 0.2s;
+      @media (min-width: $b-mobile) {
+        width: 40%;
+      }
+      &:hover {
+        opacity: 0.9;
+        & .o-accueil-realisation-figcaption {
+          opacity: 1;
+        }
+      }
+      & .o-accueil-realisation-figcaption-span {
+        width: 100%;
+        display: block;
+      }
       & img {
         width: 100%;
       }

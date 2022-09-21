@@ -20,7 +20,7 @@ const AccueilBack = (props) => {
       {[...Array(props.intArticle)].map((value, index) => (
         <div key={index}>
           <img
-            style={{ transform: `translateY(${offsetY * 0.25}px)` }}
+            style={{ transform: `translateY(${offsetY * 0.2}px)` }}
             className="o-imageBackground--principal"
             src={background_mauve}
             alt=""

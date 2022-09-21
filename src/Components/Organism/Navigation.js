@@ -36,6 +36,7 @@ const Navigation = () => {
       window.addEventListener("scroll", () =>
         setMenuBackground(window.pageYOffset > 50)
       );
+      return () => window.removeEventListener("scroll", setMenuBackground);
     }
   }, []);
   // SetShowMenu va changer la valeur de la variable showMenu, useState est une fonction de react

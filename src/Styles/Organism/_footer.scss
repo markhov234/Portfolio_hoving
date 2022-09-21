@@ -1,0 +1,27 @@
+.o-footer {
+  background-color: $mauve-light;
+  padding: 20px 0;
+  &-zone {
+  }
+
+  &-social {
+    &-zone {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      justify-content: center;
+
+      & li {
+        margin: 0 30px;
+        & svg {
+          fill: white;
+          @media (min-width: $b-mobile) {
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+}

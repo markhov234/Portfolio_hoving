@@ -1,26 +1,81 @@
+import AccueilBack from "../Organism/AccueilBack";
 const AccueilNews = (props) => {
+  console.log(props.intArticle);
   return (
     <div className="o-accueil-realisation">
+      <AccueilBack intArticle={props.intArticle} />
       <div className="o-accueil-realisation">
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
-          <figcaption>Oeuvre réalisé par Marc-Antoine Hovington</figcaption>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
         </figure>
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
-          <figcaption>Oeuvre réalisé par Marc-Antoine Hovington</figcaption>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
         </figure>
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
-          <figcaption>Oeuvre réalisé par Marc-Antoine Hovington</figcaption>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
         </figure>
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
-          <figcaption>Oeuvre réalisé par Marc-Antoine Hovington</figcaption>
-        </figure>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
+        </figure>{" "}
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
-          <figcaption>Oeuvre réalisé par Marc-Antoine Hovington</figcaption>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
+        </figure>{" "}
+        <figure className="o-accueil-realisation-figure">
+          <img alt="" src="https://fakeimg.pl/250x250/"></img>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
+        </figure>{" "}
+        <figure className="o-accueil-realisation-figure">
+          <img alt="" src="https://fakeimg.pl/250x250/"></img>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
+        </figure>{" "}
+        <figure className="o-accueil-realisation-figure">
+          <img alt="" src="https://fakeimg.pl/250x250/"></img>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
+        </figure>{" "}
+        <figure className="o-accueil-realisation-figure">
+          <img alt="" src="https://fakeimg.pl/250x250/"></img>
+          <div className="o-accueil-realisation-figcaption">
+            Oeuvre réalisé par{" "}
+            <span className="o-accueil-realisation-figcaption-span"></span>
+            Marc-Antoine Hovington
+          </div>
         </figure>
       </div>
     </div>

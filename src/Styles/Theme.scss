@@ -1,10 +1,11 @@
-@use "./norms";
-@use "./Organism/header";
-@use "./Organism/accueil-news";
-@use "./Organism/background";
-@use "./Organism/navigation-main";
-@use "./Pages/accueil";
-@use "./Atoms/link";
+@import "./norms";
+@import "./Organism/header";
+@import "./Organism/accueil-news";
+@import "./Organism/footer";
+@import "./Organism/background";
+@import "./Organism/navigation-main";
+@import "./Pages/accueil";
+@import "./Atoms/link";
 
 html {
   background-color: #e6e2de;
