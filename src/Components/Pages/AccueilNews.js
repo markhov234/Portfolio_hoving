@@ -4,7 +4,7 @@ const AccueilNews = (props) => {
   return (
     <div className="o-accueil-realisation">
       <AccueilBack intArticle={props.intArticle} />
-      <div className="o-accueil-realisation">
+      <div className="o-accueil-realisation-zone">
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
           <div className="o-accueil-realisation-figcaption">

@@ -1,7 +1,46 @@
 .o-footer {
   background-color: $mauve-light;
-  padding: 20px 0;
-  &-zone {
+  padding: 20px 0 10px;
+  &-small {
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+    flex-wrap: wrap;
+    @media (min-width: $b-mobile) {
+      font-size: 1.3rem;
+    }
+    @media (min-width: $b-desktop) {
+      font-size: 1rem;
+    }
+    &::before {
+      display: block;
+      content: "";
+      position: relative;
+      height: 2vw;
+      width: 100%;
+      @media (min-width: $b-mobile) {
+        height: 3vw;
+      }
+      @media (min-width: $b-desktop) {
+        height: 2vw;
+      }
+    }
+  }
+  &-icon {
+    width: 8vw;
+    transition: ease-in-out 0.15s;
+    @media (min-width: $b-mobile) {
+      width: 7vw;
+    }
+    @media (min-width: $b-desktop) {
+      width: 2.5vw;
+      margin-top: 25px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &-social {
@@ -11,14 +50,19 @@
       margin: 0;
       list-style: none;
       justify-content: center;
+      @media (min-width: $b-mobile) {
+        width: 50%;
+        margin: auto;
+        justify-content: space-around;
+      }
 
       & li {
         margin: 0 30px;
         & svg {
           fill: white;
           @media (min-width: $b-mobile) {
-            width: 48px;
-            height: 48px;
+            width: 95%;
+            height: 95%;
           }
         }
       }
