@@ -4,7 +4,7 @@ const Header = (props) => {
   return (
     <header className="o-header">
       <div className="o-header--content ">
-        <Navigation></Navigation>
+        <Navigation screenWidth={props.screenWidth}></Navigation>
         <h1 className="o-header--title">{props.title}</h1>
       </div>
     </header>

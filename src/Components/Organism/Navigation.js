@@ -2,13 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [menuBackground, setMenuBackground] = useState(false);
+  const breakpointDesktop = 1024;
 
   // let menu = null;
   let icon = null;
-
+  let iconSpan = null;
   if (showMenu) {
     icon = (
       <FontAwesomeIcon
@@ -25,6 +26,13 @@ const Navigation = () => {
         onClick={() => setShowMenu(!showMenu)}
       />
     );
+  }
+  if(props.screenWidth < breakpointDesktop){
+    iconSpan = (
+      <span className="o-navigation--main-span">{icon}</span>
+    );
+  }else{
+    iconSpan = null;
   }
 
   // What does useEffect do?
@@ -48,8 +56,7 @@ const Navigation = () => {
         (menuBackground && showMenu === false ? " background" : "")
       }
     >
-      <span className="o-navigation--main-span">{icon}</span>
-      {/* conditionnal rendering */}
+      {iconSpan}
       <div
         className={"o-navigation--main--menu" + (showMenu ? " open" : " close")}
       >

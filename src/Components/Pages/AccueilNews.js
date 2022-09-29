@@ -1,6 +1,6 @@
 import AccueilBack from "../Organism/AccueilBack";
 const AccueilNews = (props) => {
-  console.log(props.intArticle);
+
   return (
     <div className="o-accueil-realisation">
       <AccueilBack intArticle={props.intArticle} />
