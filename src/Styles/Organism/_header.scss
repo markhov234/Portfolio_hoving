@@ -3,6 +3,9 @@
     font-size: 12vw;
     text-align: center;
     font-weight: 500;
+    @media (min-width: $b-desktop) {
+      font-size: 8vw;
+    }
   }
   &--image {
     width: 100%;

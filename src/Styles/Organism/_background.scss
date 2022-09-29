@@ -1,12 +1,24 @@
 .o-imageBackground {
+  &--zone {
+    &-desktop {
+    }
+  }
   &--principal {
     width: 100%;
     top: 20vw;
     position: relative;
+    @media (min-width: $b-desktop) {
+      position: absolute;
+      top: 0;
+    }
   }
   &--secondaire {
     width: 100%;
     top: 20vw;
     position: relative;
+    @media (min-width: $b-desktop) {
+      position: absolute;
+      top: 0;
+    }
   }
 }

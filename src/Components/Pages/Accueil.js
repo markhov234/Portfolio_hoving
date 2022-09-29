@@ -2,7 +2,7 @@ import Header from "../Header.js";
 import AccueilNews from "./AccueilNews";
 import Footer from "./../Organism/Footer";
 import React from "react";
-import useViewport from './../ReactHook/UseViewport.js'
+import useViewport from "./../ReactHook/UseViewport.js";
 const Accueil = (props) => {
   // Définis la function on Click ici
 
@@ -12,9 +12,13 @@ const Accueil = (props) => {
   const { screenWidth } = useViewport();
   return (
     <div className="p-accueil">
-      <Header className="o-header margin" title="Mon Portfolio"  screenWidth={screenWidth}  />
+      <Header
+        className="o-header margin"
+        title="Mon Portfolio"
+        screenWidth={screenWidth}
+      />
       <div className="p-accueil-content">
-        <AccueilNews intArticle={nbrArticle}/>
+        <AccueilNews screenWidth={screenWidth} intArticle={nbrArticle} />
       </div>
       <Footer />
     </div>

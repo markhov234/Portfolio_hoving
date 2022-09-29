@@ -11,10 +11,6 @@
       flex-direction: row;
       justify-content: center;
     }
-    @media (min-width: $b-desktop) {
-      width: 85%;
-      margin: auto;
-    }
     &-zone {
       z-index: 2;
       display: flex;
@@ -52,6 +48,7 @@
       }
       @media (min-width: $b-desktop) {
         width: 42%;
+        margin: 0;
       }
       &:hover {
         opacity: 0.9;

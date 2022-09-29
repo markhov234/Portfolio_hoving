@@ -10,10 +10,11 @@ const Navigation = (props) => {
   // let menu = null;
   let icon = null;
   let iconSpan = null;
+  let actualMenu = null;
   if (showMenu) {
     icon = (
       <FontAwesomeIcon
-        className="o-navigation--main-icon close"
+        className="o-navigation--mobile-icon close"
         icon={faClose}
         onClick={() => setShowMenu(!showMenu)}
       />
@@ -21,18 +22,50 @@ const Navigation = (props) => {
   } else {
     icon = (
       <FontAwesomeIcon
-        className="o-navigation--main-icon open"
+        className="o-navigation--mobile-icon open"
         icon={faBars}
         onClick={() => setShowMenu(!showMenu)}
       />
     );
   }
-  if(props.screenWidth < breakpointDesktop){
-    iconSpan = (
-      <span className="o-navigation--main-span">{icon}</span>
+  if (props.screenWidth < breakpointDesktop) {
+    iconSpan = <span className="o-navigation--mobile-span">{icon}</span>;
+    actualMenu = (
+      <ul className="o-navigation--mobile--menu-zone">
+        <div className="o-navigation--mobile--menu-zone">
+          <li className="o-navigation--mobile--menu-item">
+            <a href="www.google.com">Accueil </a>
+          </li>
+          <li className="o-navigation--mobile--menu-item">
+            <a href="www.google.com">Projets </a>
+          </li>
+          <li className="o-navigation--mobile--menu-item">
+            <a href="www.google.com">Profil </a>
+          </li>
+          <li className="o-navigation--mobile--menu-item">
+            <a href="www.google.com">Me contacter </a>
+          </li>
+        </div>
+      </ul>
     );
-  }else{
+  } else {
     iconSpan = null;
+    actualMenu = (
+      <ul className="o-navigation--desktop--menu-zone">
+        <li className="o-navigation--desktop--menu-item">
+          <a href="www.google.com">Accueil </a>
+        </li>
+        <li className="o-navigation--desktop--menu-item">
+          <a href="www.google.com">Projets </a>
+        </li>
+        <li className="o-navigation--desktop--menu-item">
+          <a href="www.google.com">Profil </a>
+        </li>
+        <li className="o-navigation--desktop--menu-item">
+          <a href="www.google.com">Me contacter </a>
+        </li>
+      </ul>
+    );
   }
 
   // What does useEffect do?
@@ -52,30 +85,20 @@ const Navigation = (props) => {
   return (
     <nav
       className={
-        "o-navigation--main" +
+        "o-navigation--mobile" +
         (menuBackground && showMenu === false ? " background" : "")
       }
     >
       {iconSpan}
       <div
-        className={"o-navigation--main--menu" + (showMenu ? " open" : " close")}
+        className={
+          "o-navigation--" +
+          (props.screenWidth < breakpointDesktop ? "mobile" : "desktop") +
+          "--menu" +
+          (showMenu ? " open" : " close")
+        }
       >
-        <ul className="o-navigation--main--menu-zone">
-          <div className="o-navigation--main--menu-zone">
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Accueil </a>
-            </li>
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Projets </a>
-            </li>
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Profil </a>
-            </li>
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Me contacter </a>
-            </li>
-          </div>
-        </ul>
+        {actualMenu}
       </div>
     </nav>
   );

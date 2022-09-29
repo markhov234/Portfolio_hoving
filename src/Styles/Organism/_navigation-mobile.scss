@@ -1,4 +1,4 @@
-.o-navigation--main {
+.o-navigation--mobile {
   display: flex;
   justify-content: flex-end;
   top: 0px;
@@ -8,6 +8,10 @@
   position: fixed;
   z-index: 4;
   transition: ease-in-out 0.3s;
+  @media (min-width: $b-desktop) {
+    display: flex;
+    justify-content: flex-start;
+  }
 
   &.background {
     background-color: $mauve-light;
@@ -15,7 +19,10 @@
     @media (min-width: $b-mobile) {
       height: 125px;
     }
-    & .o-navigation--main-span {
+    @media (min-width: $b-desktop) {
+      height: 75px;
+    }
+    & .o-navigation--mobile-span {
       color: white;
     }
   }
@@ -63,7 +70,7 @@
       @media (min-width: $b-mobile) {
         height: 1000px;
       }
-      & .o-navigation--main--menu-zone {
+      & .o-navigation--mobile--menu-zone {
         position: relative;
         left: 0;
         transition: ease-out 0.3s;
@@ -75,7 +82,7 @@
       width: 0px;
       height: 0px;
 
-      & .o-navigation--main--menu-zone {
+      & .o-navigation--mobile--menu-zone {
         position: relative;
         left: 200px;
         top: -200px;
