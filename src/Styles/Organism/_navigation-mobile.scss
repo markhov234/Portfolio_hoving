@@ -14,7 +14,7 @@
   }
 
   &.background {
-    background-color: $mauve-light;
+    background-color: $spanish-viridian;
 
     @media (min-width: $b-mobile) {
       height: 125px;
@@ -23,7 +23,7 @@
       height: 75px;
     }
     & .o-navigation--mobile-span {
-      color: white;
+      color: $platinum;
     }
   }
   &-span {

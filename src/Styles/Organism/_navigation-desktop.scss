@@ -13,7 +13,7 @@
       text-decoration: none;
       font-size: 2rem;
       font-weight: 600;
-      color: black;
+      color: $sonic-silver;
       display: block;
       transition: ease-in-out 0.15s;
       &:hover {
@@ -24,5 +24,5 @@
 }
 
 .background .o-navigation--desktop--menu-item a {
-  color: white;
+  color: $platinum;
 }

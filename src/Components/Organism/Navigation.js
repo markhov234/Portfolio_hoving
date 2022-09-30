@@ -37,9 +37,6 @@ const Navigation = (props) => {
             <a href="www.google.com">Accueil </a>
           </li>
           <li className="o-navigation--mobile--menu-item">
-            <a href="www.google.com">Projets </a>
-          </li>
-          <li className="o-navigation--mobile--menu-item">
             <a href="www.google.com">Profil </a>
           </li>
           <li className="o-navigation--mobile--menu-item">
@@ -54,9 +51,6 @@ const Navigation = (props) => {
       <ul className="o-navigation--desktop--menu-zone">
         <li className="o-navigation--desktop--menu-item">
           <a href="www.google.com">Accueil </a>
-        </li>
-        <li className="o-navigation--desktop--menu-item">
-          <a href="www.google.com">Projets </a>
         </li>
         <li className="o-navigation--desktop--menu-item">
           <a href="www.google.com">Profil </a>
