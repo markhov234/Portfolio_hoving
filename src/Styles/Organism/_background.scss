@@ -1,24 +1,67 @@
-.o-imageBackground {
-  &--zone {
-    &-desktop {
-    }
-  }
-  &--principal {
-    width: 100%;
-    top: 20vw;
-    position: relative;
-    @media (min-width: $b-desktop) {
+.o-imageBackground--zone {
+  &-desktop {
+    height: inherit;
+    & svg {
       position: absolute;
-      top: 0;
-    }
-  }
-  &--secondaire {
-    width: 100%;
-    top: 20vw;
-    position: relative;
-    @media (min-width: $b-desktop) {
-      position: absolute;
-      top: 0;
+      & path {
+        // animation: positionXYNegative 5s ease infinite;
+      }
     }
   }
 }
+
+// @keyframes positionXYPositive {
+//   0% {
+//     transform: translateX(0%) translateY(0%);
+//   }
+
+//   50% {
+//     transform: translateX(25%) translateY(25%);
+//   }
+
+//   100% {
+//     transform: translateX(1%) translateY(1%);
+//   }
+// }
+
+// @keyframes positionXYNegative {
+//   0% {
+//     transform: translateX(0%) translateY(0%);
+//   }
+
+//   50% {
+//     transform: translateX(-25%) translateY(-25%);
+//   }
+
+//   100% {
+//     transform: translateX(-1%) translateY(-1%);
+//   }
+// }
+
+// @keyframes positionXPositive {
+//   0% {
+//     transform: translateX(0%) translateY(0%);
+//   }
+
+//   50% {
+//     transform: translateX(25%) translateY(25%);
+//   }
+
+//   100% {
+//     transform: translateX(1%) translateY(1%);
+//   }
+// }
+
+// @keyframes positionYPositive {
+//   0% {
+//     transform: translateX(0%) translateY(0%);
+//   }
+
+//   50% {
+//     transform: translateX(25%) translateY(25%);
+//   }
+
+//   100% {
+//     transform: translateX(1%) translateY(1%);
+//   }
+// }

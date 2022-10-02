@@ -1,11 +1,8 @@
-import AccueilBack from "../Organism/AccueilBack";
+import AccueilBackInteractive from "./../Organism/AccueilBackInteractive";
 const AccueilNews = (props) => {
   return (
     <div className="o-accueil-realisation">
-      <AccueilBack
-        screenWidth={props.screenWidth}
-        intArticle={props.intArticle}
-      />
+      <AccueilBackInteractive />
       <div className="o-accueil-realisation-zone">
         <figure className="o-accueil-realisation-figure">
           <img alt="" src="https://fakeimg.pl/250x250/"></img>
