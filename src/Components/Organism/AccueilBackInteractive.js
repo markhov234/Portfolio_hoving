@@ -15,6 +15,7 @@ const AccueilBackInteractive = () => {
             axeX={triangle[4]}
             axeY={triangle[3]}
             parallax={triangle[5]}
+            parallaxY={triangle[6]}
           />
         ))}
       </div>

@@ -4,53 +4,10 @@
     & svg {
       position: absolute;
       & path {
-        // animation: positionXYNegative 5s ease infinite;
       }
     }
   }
 }
-
-// @keyframes positionXYPositive {
-//   0% {
-//     transform: translateX(0%) translateY(0%);
-//   }
-
-//   50% {
-//     transform: translateX(25%) translateY(25%);
-//   }
-
-//   100% {
-//     transform: translateX(1%) translateY(1%);
-//   }
-// }
-
-// @keyframes positionXYNegative {
-//   0% {
-//     transform: translateX(0%) translateY(0%);
-//   }
-
-//   50% {
-//     transform: translateX(-25%) translateY(-25%);
-//   }
-
-//   100% {
-//     transform: translateX(-1%) translateY(-1%);
-//   }
-// }
-
-// @keyframes positionXPositive {
-//   0% {
-//     transform: translateX(0%) translateY(0%);
-//   }
-
-//   50% {
-//     transform: translateX(25%) translateY(25%);
-//   }
-
-//   100% {
-//     transform: translateX(1%) translateY(1%);
-//   }
-// }
 
 // @keyframes positionYPositive {
 //   0% {

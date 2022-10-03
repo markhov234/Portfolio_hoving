@@ -30,12 +30,12 @@
       top: -185px;
       text-align: center;
       margin: 0 20px;
-      background-color: $platinum;
+      background-color: white;
       border-radius: 5%;
       opacity: 0;
       transition: ease-in-out 0.2s;
       @media (min-width: $b-mobile) {
-        top: -218px;
+        top: -190px;
         font-size: 1.5rem;
       }
     }
@@ -51,6 +51,7 @@
         margin: 0;
       }
       &:hover {
+        transform: scale(1.05);
         opacity: 0.9;
         & .o-accueil-realisation-figcaption {
           opacity: 1;

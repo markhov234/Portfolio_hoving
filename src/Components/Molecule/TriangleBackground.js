@@ -8,6 +8,12 @@ const TriangleBackground = (props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   let parallaxDecimal = Number(0 + "." + props.parallax);
+  let parallaxY = "";
+
+  if (props.parallaxY === true) {
+    parallaxY = "-";
+  }
+
   return (
     <svg
       fill="none"
@@ -18,6 +24,7 @@ const TriangleBackground = (props) => {
         left: props.axeX + "%",
         transform:
           "translateY(" +
+          parallaxY +
           offsetY * parallaxDecimal +
           "px)" +
           " rotate(" +
