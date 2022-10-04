@@ -1,5 +1,6 @@
 .o-navigation--desktop--menu {
-  width: 100%;
+  width: 60%;
+  margin-left: auto;
   &-zone {
     display: flex;
     flex-wrap: wrap;
@@ -11,13 +12,14 @@
 
     & a {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 600;
       color: $sonic-silver;
       display: block;
       transition: ease-in-out 0.15s;
       &:hover {
         transform: scale(1.25);
+        color: $spanish-viridian-hover;
       }
     }
   }

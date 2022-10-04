@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import {
+  Link
+} from "react-router-dom";
 
 const Navigation = (props) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,13 +37,13 @@ const Navigation = (props) => {
       <ul className="o-navigation--mobile--menu-zone">
         <div className="o-navigation--mobile--menu-zone">
           <li className="o-navigation--mobile--menu-item">
-            <a href="www.google.com">Accueil </a>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="o-navigation--mobile--menu-item">
-            <a href="www.google.com">Profil </a>
+            <Link to="/profil">Profil</Link>
           </li>
           <li className="o-navigation--mobile--menu-item">
-            <a href="www.google.com">Me contacter </a>
+          <Link to="/contact">Me contacter</Link>
           </li>
         </div>
       </ul>
@@ -50,13 +53,13 @@ const Navigation = (props) => {
     actualMenu = (
       <ul className="o-navigation--desktop--menu-zone">
         <li className="o-navigation--desktop--menu-item">
-          <a href="www.google.com">Accueil </a>
+        <Link to="/">Accueil</Link>
         </li>
         <li className="o-navigation--desktop--menu-item">
-          <a href="www.google.com">Profil </a>
+        <Link to="/profil">Profil</Link>
         </li>
         <li className="o-navigation--desktop--menu-item">
-          <a href="www.google.com">Me contacter </a>
+        <Link to="/contact">Me contacter</Link>
         </li>
       </ul>
     );

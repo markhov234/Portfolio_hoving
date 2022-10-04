@@ -5,19 +5,14 @@
     font-weight: 500;
     @media (min-width: $b-desktop) {
       font-size: 8vw;
+      margin-top: 8vw;
     }
   }
   &--image {
     width: 100%;
-    // height: auto;
-    // border: none;
-    // display: block;
-    // position: absolute;
-    // top: 0;
-    // height: 47vw;
   }
   &--menu {
-    @media (min-width: 780px) {
+    @media (min-width: $b-mobile) {
       display: flex;
       flex-wrap: wrap;
       width: 55%;
