@@ -1,6 +1,8 @@
 import folks from "../../Images/folks.png";
 import AccueilBackInteractive from "./../Organism/AccueilBackInteractive";
+import ProjectsData from "./../../BackEnd/data.json";
 const AccueilNews = (props) => {
+  console.log(ProjectsData.projets[0]);
   return (
     <div className="o-accueil-realisation">
       <AccueilBackInteractive />

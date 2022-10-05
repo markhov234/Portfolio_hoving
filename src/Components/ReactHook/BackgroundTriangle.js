@@ -14,7 +14,6 @@ const backgroundTriangle = (nbOfTriangle) => {
     if (axeY % 2 === 0) {
       parallaxY = true;
     }
-    console.log("allo");
     arrayTriangle.push([
       selectionRotate,
       selectionWidth,
