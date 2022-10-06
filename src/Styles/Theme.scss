@@ -1,13 +1,15 @@
 @import "./norms";
 @import "./Organism/header";
 @import "./Organism/accueil-news";
+@import "./Organism/accueil-projet";
 @import "./Organism/footer";
 @import "./Organism/background";
-@import "./Organism/navigation-main";
+@import "./Organism/navigation-mobile";
+@import "./Organism/navigation-desktop";
 @import "./Pages/accueil";
 @import "./Atoms/link";
 
 html {
-  background-color: #e6e2de;
+  background-color: $platinum;
   color: black;
 }

@@ -1,6 +1,6 @@
 .o-accueil {
   &-realisation {
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -10,10 +10,6 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
-    }
-    @media (min-width: $b-desktop) {
-      width: 85%;
-      margin: auto;
     }
     &-zone {
       z-index: 2;
@@ -39,7 +35,7 @@
       opacity: 0;
       transition: ease-in-out 0.2s;
       @media (min-width: $b-mobile) {
-        top: -218px;
+        top: -190px;
         font-size: 1.5rem;
       }
     }
@@ -52,8 +48,11 @@
       }
       @media (min-width: $b-desktop) {
         width: 42%;
+        margin: 0;
       }
       &:hover {
+        cursor:pointer;
+        transform: scale(1.05);
         opacity: 0.9;
         & .o-accueil-realisation-figcaption {
           opacity: 1;

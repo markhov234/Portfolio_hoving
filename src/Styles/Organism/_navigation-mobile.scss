@@ -1,4 +1,4 @@
-.o-navigation--main {
+.o-navigation--mobile {
   display: flex;
   justify-content: flex-end;
   top: 0px;
@@ -8,15 +8,22 @@
   position: fixed;
   z-index: 4;
   transition: ease-in-out 0.3s;
+  @media (min-width: $b-desktop) {
+    display: flex;
+    justify-content: flex-start;
+  }
 
   &.background {
-    background-color: $mauve-light;
+    background-color: $spanish-viridian;
 
     @media (min-width: $b-mobile) {
       height: 125px;
     }
-    & .o-navigation--main-span {
-      color: white;
+    @media (min-width: $b-desktop) {
+      height: 75px;
+    }
+    & .o-navigation--mobile-span {
+      color: $platinum;
     }
   }
   &-span {
@@ -55,7 +62,7 @@
     text-decoration: none;
     transition: ease-out 0.3s;
     &.open {
-      background-color: $mauve-light;
+      background-color: $spanish-viridian;
       width: 100%;
       height: 600px;
       border-radius: 15% 0%;
@@ -63,7 +70,7 @@
       @media (min-width: $b-mobile) {
         height: 1000px;
       }
-      & .o-navigation--main--menu-zone {
+      & .o-navigation--mobile--menu-zone {
         position: relative;
         left: 0;
         transition: ease-out 0.3s;
@@ -71,11 +78,11 @@
     }
     &.close {
       transition: ease-in 0.4s;
-      background-color: $mauve-blue;
+      background-color: $spanish-viridian-hover;
       width: 0px;
       height: 0px;
 
-      & .o-navigation--main--menu-zone {
+      & .o-navigation--mobile--menu-zone {
         position: relative;
         left: 200px;
         top: -200px;
@@ -112,7 +119,7 @@
           padding: 30px 0;
         }
         &:hover {
-          background-color: #4438a8;
+          background-color: $spanish-viridian-hover;
           font-weight: 500;
           cursor: pointer;
         }

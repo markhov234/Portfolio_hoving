@@ -1,12 +1,24 @@
-.o-imageBackground {
-  &--principal {
-    width: 100%;
-    top: 20vw;
-    position: relative;
-  }
-  &--secondaire {
-    width: 100%;
-    top: 20vw;
-    position: relative;
+.o-imageBackground--zone {
+  &-desktop {
+    height: inherit;
+    & svg {
+      position: absolute;
+      & path {
+      }
+    }
   }
 }
+
+// @keyframes positionYPositive {
+//   0% {
+//     transform: translateX(0%) translateY(0%);
+//   }
+
+//   50% {
+//     transform: translateX(25%) translateY(25%);
+//   }
+
+//   100% {
+//     transform: translateX(1%) translateY(1%);
+//   }
+// }

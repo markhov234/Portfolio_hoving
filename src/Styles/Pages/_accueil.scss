@@ -1,7 +1,11 @@
 .p-accueil {
   &-background {
-    position: absolute;
-    top: -100px;
+    position: fixed;
     z-index: 1;
+    width: 100%;
+    height: 100%;
+    @media (min-width: $b-desktop) {
+      top: 0;
+    }
   }
 }

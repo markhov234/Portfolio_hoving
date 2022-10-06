@@ -1,10 +1,13 @@
 .o-footer {
-  background-color: $mauve-light;
+  background-color: $spanish-viridian;
   padding: 20px 0 10px;
+  z-index: 2;
+  position: relative;
   &-small {
     justify-content: center;
     display: flex;
     font-size: 14px;
+    color: $pale-silver;
     width: 100%;
     font-weight: bold;
     flex-wrap: wrap;

@@ -1,18 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import {
+  Link
+} from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [menuBackground, setMenuBackground] = useState(false);
+  const breakpointDesktop = 1024;
 
   // let menu = null;
   let icon = null;
-
+  let iconSpan = null;
+  let actualMenu = null;
   if (showMenu) {
     icon = (
       <FontAwesomeIcon
-        className="o-navigation--main-icon close"
+        className="o-navigation--mobile-icon close"
         icon={faClose}
         onClick={() => setShowMenu(!showMenu)}
       />
@@ -20,10 +25,43 @@ const Navigation = () => {
   } else {
     icon = (
       <FontAwesomeIcon
-        className="o-navigation--main-icon open"
+        className="o-navigation--mobile-icon open"
         icon={faBars}
         onClick={() => setShowMenu(!showMenu)}
       />
+    );
+  }
+  if (props.screenWidth < breakpointDesktop) {
+    iconSpan = <span className="o-navigation--mobile-span">{icon}</span>;
+    actualMenu = (
+      <ul className="o-navigation--mobile--menu-zone">
+        <div className="o-navigation--mobile--menu-zone">
+          <li className="o-navigation--mobile--menu-item">
+            <Link to="/">Accueil</Link>
+          </li>
+          <li className="o-navigation--mobile--menu-item">
+            <Link to="/profil">Profil</Link>
+          </li>
+          <li className="o-navigation--mobile--menu-item">
+          <Link to="/contact">Me contacter</Link>
+          </li>
+        </div>
+      </ul>
+    );
+  } else {
+    iconSpan = null;
+    actualMenu = (
+      <ul className="o-navigation--desktop--menu-zone">
+        <li className="o-navigation--desktop--menu-item">
+        <Link to="/">Accueil</Link>
+        </li>
+        <li className="o-navigation--desktop--menu-item">
+        <Link to="/profil">Profil</Link>
+        </li>
+        <li className="o-navigation--desktop--menu-item">
+        <Link to="/contact">Me contacter</Link>
+        </li>
+      </ul>
     );
   }
 
@@ -44,31 +82,20 @@ const Navigation = () => {
   return (
     <nav
       className={
-        "o-navigation--main" +
+        "o-navigation--mobile" +
         (menuBackground && showMenu === false ? " background" : "")
       }
     >
-      <span className="o-navigation--main-span">{icon}</span>
-      {/* conditionnal rendering */}
+      {iconSpan}
       <div
-        className={"o-navigation--main--menu" + (showMenu ? " open" : " close")}
+        className={
+          "o-navigation--" +
+          (props.screenWidth < breakpointDesktop ? "mobile" : "desktop") +
+          "--menu" +
+          (showMenu ? " open" : " close")
+        }
       >
-        <ul className="o-navigation--main--menu-zone">
-          <div className="o-navigation--main--menu-zone">
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Accueil </a>
-            </li>
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Projets </a>
-            </li>
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Profil </a>
-            </li>
-            <li className="o-navigation--main--menu-item">
-              <a href="www.google.com">Me contacter </a>
-            </li>
-          </div>
-        </ul>
+        {actualMenu}
       </div>
     </nav>
   );
