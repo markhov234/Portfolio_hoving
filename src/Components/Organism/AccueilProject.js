@@ -1,8 +1,9 @@
 const AccueilProject = (props) => {
-  function isVisible(state) {
-    // https://medium.com/@thejasonfile/callback-functions-in-react-e822ebede766
+  function isVisible() {
+    props.isVisible[1](false);
   }
 
+// console.log(props.isVisible[1](false))
   return (
     <div onClick={isVisible} className="o-accueil-project">
       <div>
