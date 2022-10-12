@@ -1,8 +1,43 @@
-.o-accueil-project{
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  top: 0;
-  z-index: 4;
+.o-accueil-project {
+  position: relative;
+
+  &--title {
+    font-size: 12vw;
+    text-align: center;
+    font-weight: 500;
+    background-color: $onyx;
+    margin: 0;
+    color: $platinum;
+    @media (min-width: $b-mobile) {
+      font-size: 7vw;
+      padding: 4vw 0 2vw 0;
+    }
+  }
+  &--article {
+    position: relative;
+    &-svg-top {
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      & img {
+        width: 100%;
+      }
+    }
+    &-svg-bottom {
+      margin: 0 0 -15px 0;
+      width: 100%;
+      position: absolute;
+      transform: rotate(180deg);
+      bottom: 0;
+      left: 0;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  & .test {
+    height: 1000px;
+  }
 }

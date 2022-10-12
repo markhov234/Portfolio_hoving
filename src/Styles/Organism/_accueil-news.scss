@@ -1,6 +1,5 @@
 .o-accueil {
   &-realisation {
-    z-index: 3;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -15,14 +14,18 @@
       z-index: 2;
       display: flex;
       flex-direction: column;
+      margin: 0 20px;
       @media (min-width: $b-mobile) {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
       }
       @media (min-width: $b-desktop) {
         width: 85%;
         margin: auto;
+      }
+      & figure {
+        margin: 0;
       }
     }
     &-figcaption {
@@ -36,13 +39,14 @@
       transition: ease-in-out 0.2s;
       @media (min-width: $b-mobile) {
         top: -190px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
     &-figure {
-      font-size: 1.2rem;
       font-weight: bold;
       transition: ease-in-out 0.2s;
+      text-decoration: none;
+      color: $onyx;
       @media (min-width: $b-mobile) {
         width: 35%;
       }
@@ -51,7 +55,7 @@
         margin: 0;
       }
       &:hover {
-        cursor:pointer;
+        cursor: pointer;
         transform: scale(1.05);
         opacity: 0.9;
         & .o-accueil-realisation-figcaption {
