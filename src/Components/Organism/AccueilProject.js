@@ -5,47 +5,46 @@ import ProjectsData from "./../../BackEnd/data.json";
 import { useParams } from "react-router-dom";
 
 const AccueilProject = (props) => {
-  //   function isVisible() {
-  //     props.isVisible[1](false);
-  //   }
-  // Ceci est une fonction caller depuis le parents (Callback)
-
+// LE USEPARAMS PERMETS DE RÉCUPÉRER L'ID ENVOYER DANS LE LIEN DE L'URL
   const { id } = useParams();
-  console.log(ProjectsData.projets[id]);
+
+// J'UTILISE DONC LE ID POUR RÉCUPERER LE PROJET A PARTIR DU JSON LOCAUX
+  const currentProject = ProjectsData.projets[id];
+  console.log(ProjectsData.projets[id].id);
+  // #TODO: Faire UNE FUNCTION ''BACKEND'' pour trouver le bon id. Faire une boucle qui rentre dans tous les projets et regarde si l'id est égal a l'id envoyer dans le url
 
   return (
     <div className="o-accueil-project">
       <h1 className="o-accueil-project--title">Mes projets</h1>
-      <div className="o-accueil-project">
-        <figure className="o-accueil-project--article-svg-top">
+      <div className="o-accueil-project--article-zone">
+        <div className="o-accueil-project--article">
+            <img
+              className="o-accueil-project--article-image"
+              src={currentProject.image}
+              alt=""
+            />
+            <h2 className="o-accueil-project--article-title">{currentProject.name}</h2>
+            <p className="o-accueil-project--article-description">
+              {currentProject.description}
+            </p>
+        </div>
+        </div>
+        <div className="o-accueil-project-techno">
+        <figure className="o-accueil-project--techno-svg-top">
           <picture>
             <source media="(min-width:1840px)" srcSet={WaveSvgWide} />
             <source media="(min-width:1024px)" srcSet={WaveSvgDesktop} />
             <img srcSet={WaveSvgMobile} alt="" />
           </picture>
         </figure>
-
-        <div className="o-accueil-project--article">
-          <div className="o-accuei-project--article-header">
-            <img
-              className="o-accueil-project--article--image"
-              src={`../../Images/folks.png`}
-              alt=""
-            />
-            <p>
-              lorem ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla
-              wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem
-              ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo
-              ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum
-              bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo !
-              lorem ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla
-              wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem
-              ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo
-              ! lorem ipsum bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum
-              bla wow wo ! lorem ipsum bla wow wo ! lorem ipsum bla
-            </p>
-          </div>
+        
+          <ul className="o-accueil-project--techno-list">
+                   {currentProject.technologie.map((technologie, index) => (
+           <li key={index}><span>Icon</span>{technologie}</li>
+        ))}
+          </ul>
         </div>
+        <div className="o-accueil-project--liked">
         <figure className="o-accueil-project--article-svg-bottom">
           <picture>
             <source media="(min-width:1840px)" srcSet={WaveSvgWide} />
@@ -53,8 +52,8 @@ const AccueilProject = (props) => {
             <img srcSet={WaveSvgMobile} alt="" />
           </picture>
         </figure>
+        </div>
       </div>
-    </div>
   );
 };
 
