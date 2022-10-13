@@ -1,6 +1,6 @@
-import linkedIn from "../../Images/linked_icon.svg";
-import gmail from "../../Images/gmail_icon.svg";
-import github from "../../Images/github_icon.svg";
+import linkedIn from "../../Images/icons/linked_icon.svg";
+import gmail from "../../Images/icons/gmail_icon.svg";
+import github from "../../Images/icons/github_icon.svg";
 const Footer = (props) => {
   // const linkedIn = linkedIn;
   // const gmail = gmail;

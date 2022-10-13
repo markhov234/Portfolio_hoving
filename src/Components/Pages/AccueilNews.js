@@ -3,9 +3,9 @@ import AccueilBackInteractive from "./../Organism/AccueilBackInteractive";
 import ProjectsData from "./../../BackEnd/data.json";
 import { Link } from "react-router-dom";
 const AccueilNews = (props) => {
-  // #TODO: Faire du méngage dans cette page 
+  // #TODO: Faire du méngage dans cette page
   // #TODO: Réorganiser la structure du projet
-  // #TODO:Optimiser les composants pour les mettres plus petits et facile à revenir dedans 
+  // #TODO:Optimiser les composants pour les mettres plus petits et facile à revenir dedans
   // #TODO: Ajouter un LAZY LOAD pour les images et un LOADING status quand les données chargent
   return (
     <div className="o-accueil-realisation">
