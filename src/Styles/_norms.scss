@@ -1,5 +1,8 @@
 .--center {
   padding: 0 4vw;
+  max-width: 1860px;
+  margin: auto;
+  display: block;
 }
 
 body {
@@ -20,6 +23,7 @@ body {
 
 $b-mobile: 640px;
 $b-desktop: 1024px;
+$b-large-desktop: 1800px;
 
 // Couleurs principals de mon site
 

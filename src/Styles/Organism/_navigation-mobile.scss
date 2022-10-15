@@ -3,7 +3,6 @@
   justify-content: flex-end;
   top: 0px;
   height: 50px;
-  background-color: transparent;
   width: 100%;
   position: fixed;
   z-index: 4;
@@ -27,14 +26,19 @@
     }
   }
   &-span {
-    padding-right: 3vw;
-    padding-top: 3vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
     position: absolute;
     cursor: pointer;
     z-index: 5;
     @media (min-width: $b-mobile) {
       padding-right: 4vw;
       padding-top: 4vw;
+    }
+    & svg {
+      color: $platinum;
+      background-color: rgba(45, 42, 43, 0.79);
+      padding: 5px;
     }
   }
   &-icon {
@@ -62,7 +66,7 @@
     text-decoration: none;
     transition: ease-out 0.3s;
     &.open {
-      background-color: $onyx;
+      background-color: rgba(45, 42, 43, 0.95);
       width: 100%;
       height: 600px;
       border-radius: 15% 0%;
@@ -78,7 +82,7 @@
     }
     &.close {
       transition: ease-in 0.4s;
-      background-color: $onyx;
+      background-color: $onyx-hover;
       width: 0px;
       height: 0px;
 

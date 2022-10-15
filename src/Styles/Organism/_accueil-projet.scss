@@ -11,17 +11,28 @@
     color: $platinum;
     @media (min-width: $b-mobile) {
       font-size: 7vw;
-      padding: 4vw 0 2vw 0;
+      padding: 8vw 0 6vw 0;
+    }
+    @media (min-width: $b-desktop) {
+      padding: 6vw 0 3vw 0;
     }
   }
   &--article {
     position: relative;
-    margin: -10px 20px 0;
-    &-description{
+    margin-top: -10px;
+    &-description {
       color: $platinum;
-      line-height: 23px;
+      line-height: 25px;
+      margin-top: 20px;
+      font-size: 16px;
+      @media (min-width: $b-large-desktop) {
+        margin-top: 30px;
+        line-height: 35px;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
     }
-    &-title{
+    &-title {
       font-size: 8vw;
       text-align: center;
       font-weight: 500;
@@ -29,49 +40,99 @@
       background-color: $onyx;
       margin: 0;
       color: $platinum;
+      &-h2 {
+        font-size: 5vw;
+        font-weight: 500;
+        background-color: $onyx;
+        margin: 30px 0 0 0;
+        color: $platinum;
+      }
     }
-    &-zone{
-      // padding-bottom: 20px;
+    &-zone {
       background-color: $onyx;
     }
-    &-image{
-      width: 100%;
+    &-image {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+      @media (min-width: $b-mobile) {
+        width: 65%;
+      }
+      // @media (min-width: $b-desktop) {
+      //   height: 2vw;
+      // }
     }
     &-svg-bottom {
       margin: 0 0 -15px 0;
       width: 100%;
       transform: rotate(180deg);
+      @media (min-width: $b-desktop) {
+        margin: 0 0 -125px 0;
+      }
+      @media (min-width: $b-large-desktop) {
+        margin: 0 0 -10px 0;
+      }
       & img {
         width: 100%;
       }
     }
   }
-  &--techno{
+  &--techno {
     width: 100%;
     &-svg-top {
       margin: -40px 0 0;
       width: 100%;
+      @media (min-width: $b-mobile) {
+        margin: -120px 0 0;
+      }
+      @media (min-width: $b-desktop) {
+        margin: -190px 0 0;
+      }
+      @media (min-width: $b-large-desktop) {
+        margin: -20px 0 0;
+      }
       & img {
         width: 100%;
       }
     }
-    &-list{
+    &-list {
       list-style: none;
       display: grid;
       grid-template-columns: auto auto auto;
       padding: 0 20px;
-      & li{
+      &-text {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      & li {
         display: flex;
         flex-wrap: wrap;
-       justify-content: center;
+        justify-content: center;
         padding: 10px;
         margin: auto;
-        & span{
+        & span {
           width: 100%;
           text-align: center;
           margin-bottom: 10px;
         }
       }
+    }
+  }
+  &--liked {
+    // background-color: $onyx;
+    & .carousel {
+      max-width: 100%;
+      @media (min-width: $b-desktop) {
+        max-width: 75%;
+      }
+      &-caption {
+        background-color: rgba(252, 244, 248, 0.8);
+      }
+    }
+    &-zone {
+      background-color: $onyx;
+      padding-bottom: 25px;
     }
   }
 }
