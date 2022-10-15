@@ -2,6 +2,8 @@ import Header from "../Header.js";
 import AccueilNews from "./AccueilNews";
 import Contact from "./Contact";
 import React from "react";
+import AccueilProject from "./../Organism/AccueilProject";
+import ScrollToTop from "../ReactHook/ScrollToTop";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import AccueilBackInteractive from "./../Organism/AccueilBackInteractive";
 
@@ -18,8 +20,10 @@ const Accueil = (props) => {
           screenWidth={screenWidth}
         />
         <div className="p-accueil-content">
+          <ScrollToTop />
           <Routes>
             <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/projects/:id" element={<AccueilProject />}></Route>
             <Route path="/users"></Route>
             <Route
               path="/"

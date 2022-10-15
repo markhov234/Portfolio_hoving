@@ -5,7 +5,6 @@ const Header = (props) => {
     <header className="o-header">
       <div className="o-header--content ">
         <Navigation screenWidth={props.screenWidth}></Navigation>
-        <h1 className="o-header--title">{props.title}</h1>
       </div>
     </header>
   );
