@@ -1,7 +1,8 @@
+import OrganismContact from "../Organism/OrganismContact";
 const Contact = () => {
   return (
-    <div className="o">
-      <h2> je suis dans la page contact</h2>
+    <div className="p-contact">
+      <OrganismContact />
     </div>
   );
 };
