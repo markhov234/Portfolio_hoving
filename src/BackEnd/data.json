@@ -45,7 +45,53 @@
       "nom": "Marc-Antoine Hovington",
       "description": "Marc-Antoine Hovington",
       "age": "Marc-Antoine Hovington",
-      "role": "Marc-Antoine Hovington"
+      "role": "Marc-Antoine Hovington",
+      "technologie":[
+        {
+          "techno": "Php",
+          "level": 7
+        },
+        {
+          "techno": "Laravel",
+          "level": 5
+        },
+        {
+          "techno": "VueJs",
+          "level": 6
+        },
+        {
+          "techno": "React",
+          "level": 6
+        },
+        {
+          "techno": "HTML",
+          "level": 9
+        },
+        {
+          "techno": "Css",
+          "level": 8
+        },
+        {
+          "techno": "Sass",
+          "level": 8
+        },
+        {
+          "techno": "Javascript",
+          "level": 7
+        },
+        {
+          "techno": "GIT",
+          "level": 7
+        },
+        {
+          "techno": "Wordpress",
+          "level": 7
+        },
+        {
+          "techno": "MySql",
+          "level": 6
+        }
+      ]
     }
   ]
 }

@@ -12,7 +12,7 @@ const AccueilProject = (props) => {
 
   // J'UTILISE DONC LE ID POUR RÉCUPERER LE PROJET A PARTIR DU JSON LOCAUX
   const currentProject = ProjectsData.projets[id];
-  console.log(ProjectsData.projets[id].id);
+  // console.log(ProjectsData.projets[id].id);
   // #TODO: Faire UNE FUNCTION ''BACKEND'' pour trouver le bon id. Faire une boucle qui rentre dans tous les projets et regarde si l'id est égal a l'id envoyer dans le url
 
   return (
