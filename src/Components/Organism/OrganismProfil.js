@@ -3,13 +3,13 @@ import allIcons from "../ReactHook/importIconsImg";
 
 const OrganismProfil = () => {
 
-    const listTechno = ProjectsData.profil[0].technologie; 
+    const listTechno = ProjectsData.profil[0]; 
 
     // console.log(listTechno);
     return (
-     <div className="o-profil">
+     <main className="o-profil">
           <h2 className="o-profil-mainTitle">Mon profil</h2>
-          <div className="o-profil-information">
+          <section className="o-profil-information">
             <div className="bleed --center">
             <h3 className="o-profil-information-title">À propos de moi</h3>
             <div className="o-profil-information-presentation"> 
@@ -22,14 +22,14 @@ const OrganismProfil = () => {
             </div>
             </div>   
             </div>
-          </div>
-          <div className="o-profil-competence --center">
-            <h4 className="o-profil-competence-title">Mes compétences</h4>
+          </section>
+          <section className="o-profil-competence">
+            <div className="o-profil-competence-zone --center">
+            <h3 className="o-profil-competence-title">Mes compétences</h3>
             <ul className="o-profil-competence-techno">
-            {listTechno.map((technologie, index) => (
+            {listTechno.technologie.map((technologie, index) => (
                 
             <li key={index} className="o-profil-competence-techno-item">
-            {console.log(technologie)}
                     <span className="o-profil-competence-techno-item-icon"> <img src={allIcons[technologie.techno]} alt="" /></span>
                     <div className="o-profil-competence-techno-zone">
                     <p className="o-profil-competence-techno-item-description">{technologie.techno}</p>
@@ -38,18 +38,21 @@ const OrganismProfil = () => {
                 </li>
                  ))}
             </ul>
-          </div>
-          <div className="o-profil-passion">
+            </div>
+          </section>
+          <section className="o-profil-passion">
             <div className="o-profil-passion-zone">
                 <h4 className="o-profil-passion-title"> Jeux-Vidéo</h4>
                 <span className="o-profil-passion-icon"></span>
                 <ul className="o-profil-passion-list">
-                    <li className="o-profil-passion-item"></li>
-                    <li className="o-profil-passion-item"></li>
+            {listTechno.passion.map((passion, index) => (
+
+                    <li key={index} className="o-profil-passion-item">{passion}</li>
+                    ))} 
                 </ul>
             </div>
-          </div>
-     </div>
+          </section>
+     </main>
     );
   };
   

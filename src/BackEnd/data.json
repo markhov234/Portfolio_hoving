@@ -43,8 +43,8 @@
   "profil": [
     {
       "nom": "Marc-Antoine Hovington",
-      "description": "Marc-Antoine Hovington",
-      "age": "Marc-Antoine Hovington",
+      "description": "Développeur Web",
+      "age": "28 ans",
       "role": "Marc-Antoine Hovington",
       "technologie":[
         {
@@ -64,7 +64,7 @@
           "level": 6
         },
         {
-          "techno": "HTML",
+          "techno": "Html",
           "level": 9
         },
         {
@@ -80,7 +80,7 @@
           "level": 7
         },
         {
-          "techno": "GIT",
+          "techno": "Github",
           "level": 7
         },
         {
@@ -91,6 +91,13 @@
           "techno": "MySql",
           "level": 6
         }
+      ],
+      "passion" : [
+        "Jeux Vidéos",
+        "Les relations humaines",
+        "Apprendre des langues",
+        "La nuit",
+        "L'entraînement"
       ]
     }
   ]
