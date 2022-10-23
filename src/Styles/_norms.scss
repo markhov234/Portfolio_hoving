@@ -14,18 +14,12 @@ body {
   margin: 40px;
   width: 100%;
 }
-// $colorMainJaune: #ffd24c;
-// $breakpoints: (
-//   phone: 640px,
-//   tablet: 768px,
-//   desktop: 1024px,
-// ) !default;
-
 $b-mobile: 640px;
 $b-desktop: 1024px;
 $b-large-desktop: 1800px;
 $paddingTop-menu: 6vw;
-// Couleurs principals de mon site
+
+// Couleurs principals
 
 $mauve-light: #625f93;
 $mauve-blue: #200ac2;
@@ -42,8 +36,4 @@ $onyx: #36393b;
 $onyx-hover: #4c4e50;
 $mango-tango: #ed7d3a;
 $rose-pale: #EF476F;
-//Function qui permet d'avoir un array dans un variable scss et permet de la mentionner comme ci elle était une propriété css
-//Exemple width : breakpoints(phone) -> 640px;
-// @function color($breakpoints) {
-//   @return map-get(map-get($breakpoints));
-// }
+
