@@ -1,12 +1,12 @@
 import TriangleBackground from "../Molecule/TriangleBackground";
 import backgroundTriangle from "./../ReactHook/BackgroundTriangle";
+import { useState } from "react";
 const AccueilBackInteractive = () => {
-  const { arrayTriangle } = backgroundTriangle(35);
-
+  const [ arrayTriangle ] = useState(backgroundTriangle(35))
   return (
     <div className="p-accueil-background">
       <div className="o-imageBackground--zone-desktop">
-        {arrayTriangle.map((triangle, index) => (
+        {arrayTriangle.arrayTriangle.map((triangle, index) => (
           <TriangleBackground
             key={index}
             rotation={triangle[0]}

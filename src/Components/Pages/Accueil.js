@@ -6,7 +6,6 @@ import React from "react";
 import AccueilProject from "./../Organism/AccueilProject";
 import ScrollToTop from "../ReactHook/ScrollToTop";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import AccueilBackInteractive from "./../Organism/AccueilBackInteractive";
 
 import Footer from "./../Organism/Footer";
 import useViewport from "./../ReactHook/UseViewport.js";
