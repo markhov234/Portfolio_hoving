@@ -43,9 +43,62 @@
   "profil": [
     {
       "nom": "Marc-Antoine Hovington",
-      "description": "Marc-Antoine Hovington",
-      "age": "Marc-Antoine Hovington",
-      "role": "Marc-Antoine Hovington"
+      "description": "Développeur Web",
+      "age": "28 ans",
+      "role": "Marc-Antoine Hovington",
+      "technologie":[
+        {
+          "techno": "Php",
+          "level": 7
+        },
+        {
+          "techno": "Laravel",
+          "level": 5
+        },
+        {
+          "techno": "VueJs",
+          "level": 6
+        },
+        {
+          "techno": "React",
+          "level": 6
+        },
+        {
+          "techno": "Html",
+          "level": 9
+        },
+        {
+          "techno": "Css",
+          "level": 8
+        },
+        {
+          "techno": "Sass",
+          "level": 8
+        },
+        {
+          "techno": "Javascript",
+          "level": 7
+        },
+        {
+          "techno": "Github",
+          "level": 7
+        },
+        {
+          "techno": "Wordpress",
+          "level": 7
+        },
+        {
+          "techno": "MySql",
+          "level": 6
+        }
+      ],
+      "passion" : [
+        "Jeux Vidéos",
+        "Les relations humaines",
+        "Apprendre des langues",
+        "La nuit",
+        "L'entraînement"
+      ]
     }
   ]
 }

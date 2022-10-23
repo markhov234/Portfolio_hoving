@@ -5,5 +5,15 @@ import Sass from "../../Images/icons/sass_icon.svg";
 import Gmail from "../../Images/icons/gmail_icon.svg";
 import Wordpress from "../../Images/icons/wordpress_icon.svg";
 import Css from "../../Images/icons/css_icon.svg";
+import Html from "../../Images/icons/html_icon.svg";
+import Javascript from "../../Images/icons/javascript_icon.svg";
+import Laravel from "../../Images/icons/laravel_icon.svg";
+import React from "../../Images/icons/react_icon.svg";
+import VueJs from "../../Images/icons/vuejs_icon.svg";
 
-export default { Github, Gmail, Linked, Php, Sass, Wordpress, Css };
+
+export default {
+    Github, Gmail, Linked, Php,
+    Sass, Wordpress, Css, Html,
+    Javascript,Laravel,React,VueJs
+};
