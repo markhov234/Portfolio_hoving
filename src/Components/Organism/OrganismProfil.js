@@ -11,7 +11,7 @@ const OrganismProfil = () => {
           <h2 className="o-profil-mainTitle">Mon profil</h2>
           <section className="o-profil-information">
             <div className="bleed --center">
-            <h3 className="o-profil-information-title">À propos de moi</h3>
+            <h3 className="o-profil-information-title a-title-h3">À propos de moi</h3>
             <div className="o-profil-information-presentation"> 
             <img className="o-profil-information-picture" alt="" src="https://fakeimg.pl/550/"></img>
             <div className="o-profil-information-description">
@@ -25,7 +25,7 @@ const OrganismProfil = () => {
           </section>
           <section className="o-profil-competence">
             <div className="o-profil-competence-zone --center">
-            <h3 className="o-profil-competence-title">Mes compétences</h3>
+            <h3 className="o-profil-competence-title a-title-h3">Mes compétences</h3>
             <ul className="o-profil-competence-techno">
             {listTechno.technologie.map((technologie, index) => (
                 
@@ -41,8 +41,8 @@ const OrganismProfil = () => {
             </div>
           </section>
           <section className="o-profil-passion">
-            <div className="o-profil-passion-zone">
-                <h4 className="o-profil-passion-title"> Jeux-Vidéo</h4>
+            <div className="o-profil-passion-zone --center">
+                <h3 className="o-profil-passion-title a-title-h3"> Mes passions</h3>
                 <span className="o-profil-passion-icon"></span>
                 <ul className="o-profil-passion-list">
             {listTechno.passion.map((passion, index) => (
