@@ -9,3 +9,9 @@ Ce projet utilise :
 ### Deployment
 Pour consulter le portfolio, voir
  (https://portfolio-hoving.pages.dev/)
+
+
+ #### TODO
+ Réarranger la structure HTML des pages,
+ Utiliser la méthode MEMO pour que le background ne change pas.
+ Filtrer le css pour nettoyer les styles
