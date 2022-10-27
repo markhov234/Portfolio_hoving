@@ -1,0 +1,53 @@
+.o-navigation--mobile {
+  @media (min-width: $b-desktop) {
+  }
+
+  &.background {
+    @media (min-width: $b-mobile) {
+    }
+    @media (min-width: $b-desktop) {
+    }
+    & .o-navigation--mobile-span {
+    }
+  }
+  &-span {
+    @media (min-width: $b-mobile) {
+    }
+    & svg {
+    }
+  }
+  &-icon {
+    &.close {
+      @media (min-width: $b-mobile) {
+      }
+    }
+    &.open {
+      @media (min-width: $b-mobile) {
+      }
+    }
+  }
+  &--menu {
+    &.open {
+      & .o-navigation--mobile--menu-zone {
+      }
+    }
+    &.close {
+      & .o-navigation--mobile--menu-zone {
+      }
+    }
+    &-zone {
+      @media (min-width: $b-mobile) {
+      }
+    }
+    & ul {
+      & a {
+      }
+      & li {
+        @media (min-width: $b-mobile) {
+        }
+        &:hover {
+        }
+      }
+    }
+  }
+}
