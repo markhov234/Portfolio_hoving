@@ -7,11 +7,13 @@ const Navigation_v2 = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [menuBackground, setMenuBackground] = useState(false);
   const breakpointDesktop = 1024;
+  let iconSpan = null;
 
   // let menu = null;
   let icon = null;
-  let iconSpan = null;
-  let actualMenu = null;
+  // if (props.screenWidth > breakpointDesktop) {
+  //   setShowMenu(false);
+  // }
   if (showMenu) {
     icon = (
       <FontAwesomeIcon
@@ -29,44 +31,9 @@ const Navigation_v2 = (props) => {
       />
     );
   }
-  if (props.screenWidth < breakpointDesktop) {
-    iconSpan = <span className="o-navigation---span">{icon}</span>;
-    actualMenu = (
-      <ul className="o-navigation--mobile--menu-zone">
-        <div className="o-navigation--mobile--menu-zone">
-          <li className="o-navigation--mobile--menu-item">
-            <Link to="/">Accueil</Link>
-          </li>
-          <li className="o-navigation--mobile--menu-item">
-            <Link to="/profil">Profil</Link>
-          </li>
-          <li className="o-navigation--mobile--menu-item">
-            <Link to="/contact">Me contacter</Link>
-          </li>
-        </div>
-      </ul>
-    );
-  } else {
-    iconSpan = null;
-    actualMenu = (
-      <ul className="o-navigation--desktop--menu-zone">
-        <li className="o-navigation--desktop--menu-item">
-          <Link to="/">Accueil</Link>
-        </li>
-        <li className="o-navigation--desktop--menu-item">
-          <Link to="/profil">Profil</Link>
-        </li>
-        <li className="o-navigation--desktop--menu-item">
-          <Link to="/contact">Me contacter</Link>
-        </li>
-      </ul>
-    );
-  }
 
-  // What does useEffect do?
-  // By using this Hook, you tell React that your component needs to do something after render.
-  // React will remember the function you passed (we’ll refer to it as our “effect”),
-  // and call it later after performing the DOM updates.
+  iconSpan = <span className="o-menu-span">{icon}</span>;
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
@@ -75,25 +42,73 @@ const Navigation_v2 = (props) => {
       return () => window.removeEventListener("scroll", setMenuBackground);
     }
   }, []);
-  // SetShowMenu va changer la valeur de la variable showMenu, useState est une fonction de react
-  // Définis la function on Click ici
+
   return (
-    <nav
-      className={
-        "o-navigation--mobile" +
-        (menuBackground && showMenu === false ? " background" : "")
-      }
-    >
-      {iconSpan}
-      <div
+    <nav className={"o-menu" + (showMenu ? " open" : "")}>
+      <span
         className={
-          "o-navigation--" +
-          (props.screenWidth < breakpointDesktop ? "mobile" : "desktop") +
-          "--menu" +
-          (showMenu ? " open" : " close")
+          "o-menu-span" +
+          (props.screenWidth > breakpointDesktop ? "-desktop" : "") +
+          (menuBackground ? " background" : "") +
+          (showMenu ? " open" : "")
         }
       >
-        {actualMenu}
+        {icon}
+      </span>
+      <div
+        className={
+          "o-menu-banner" +
+          (menuBackground && props.screenWidth > breakpointDesktop
+            ? "-background"
+            : "")
+        }
+      >
+        <div
+          className={
+            "o-menu-zone" +
+            (props.screenWidth > breakpointDesktop ? "-desktop" : "") +
+            (showMenu ? "" : " hidden") +
+            (menuBackground ? " background" : "")
+          }
+        >
+          <ul
+            className={
+              "o-menu-list" +
+              (props.screenWidth > breakpointDesktop ? "-desktop" : "")
+            }
+          >
+            <li className="o-menu-items">
+              <Link
+                to="/"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
+              >
+                Accueil
+              </Link>
+            </li>
+            <li className="o-menu-items">
+              <Link
+                to="/profil"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
+              >
+                Profil
+              </Link>
+            </li>
+            <li className="o-menu-items">
+              <Link
+                to="/contact"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
+              >
+                Me contacter
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
