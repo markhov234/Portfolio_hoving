@@ -1,0 +1,134 @@
+.o-menu {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  right: -1500px;
+  transition: ease-in-out 0.3s;
+  &.open {
+    right: 0;
+  }
+  @media (min-width: $b-mobile) {
+  }
+  @media (min-width: $b-desktop) {
+    right: 0px;
+    height: 0;
+  }
+  &-zone.hidden {
+    background-color: transparent;
+  }
+  &-banner {
+    height: 105%;
+    &-background {
+      background-color: $onyx;
+    }
+  }
+  &-zone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 105%;
+    margin-top: -95px;
+    background-color: $onyx;
+    transition: ease-in-out 0.3s;
+    @media (min-width: $b-mobile) {
+      margin-top: -95px;
+    }
+    &.hidden .o-menu-list {
+      margin-right: -2000px;
+    }
+    &-desktop {
+      width: 85%;
+      margin: auto;
+      &.background {
+        & .o-menu-items a {
+          color: $platinum;
+          transition: ease-in-out 0.3s;
+          &:hover {
+            color: $spanish-viridian-hover;
+          }
+        }
+      }
+    }
+  }
+  &-span {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: flex-end;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    right: 1500px;
+    &.open {
+      right: 0;
+    }
+    & svg {
+      width: 36px;
+      height: 36px;
+      color: $spanish-viridian-hover;
+    }
+    &.background {
+      background-color: $onyx;
+    }
+    &-desktop {
+      display: none;
+    }
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+    transition: ease-in-out 0.3s;
+    @media (min-width: $b-mobile) {
+      margin-top: 80px;
+    }
+    &-desktop {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: space-around;
+      margin-left: auto;
+    }
+  }
+  &-items {
+    font-size: 6vw;
+    font-weight: 600;
+    padding: 10px 0;
+    transition: ease-out 0.2s;
+    &:hover {
+      background-color: $spanish-viridian-hover;
+    }
+    &:active {
+      background-color: $spanish-viridian;
+    }
+    @media (min-width: $b-mobile) {
+      font-size: 5vw;
+    }
+    @media (min-width: $b-desktop) {
+      font-size: 2vw;
+      &:hover {
+        transform: scale(1.25);
+        background-color: transparent;
+      }
+    }
+    & a {
+      text-decoration: none;
+      color: $platinum;
+      @media (min-width: $b-desktop) {
+        color: $spanish-viridian;
+        transition: ease-in-out 0.2s;
+        &:hover {
+          color: $spanish-viridian-hover;
+        }
+      }
+    }
+  }
+}
