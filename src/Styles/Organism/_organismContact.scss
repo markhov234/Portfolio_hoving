@@ -1,0 +1,136 @@
+.o-contact {
+  width: 100%;
+  &-title {
+    &.a-title-h1 {
+      border: none;
+      @media (min-width: $b-contact) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &-zone {
+    @media (min-width: $b-desktop) {
+      margin-top: -90px;
+    }
+  }
+  &-content {
+    background-color: $onyx;
+    color: $platinum;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media (min-width: $b-contact) {
+      padding-bottom: 30px;
+    }
+    @media (min-width: $b-desktop) {
+      margin-top: -90px;
+    }
+    &-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    &-items {
+      margin: 15px 0;
+      display: flex;
+    }
+    &-icon {
+      margin-right: 10px;
+      // margin-left: -3px;
+      width: 50px;
+      height: auto;
+      background-color: $spanish-viridian;
+      display: block;
+    }
+    &-title {
+      text-align: center;
+      font-size: 38px;
+      font-weight: 600;
+      margin-top: -40px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  &-div {
+    &-up {
+      width: 100%;
+      margin-bottom: -10px;
+      @media (min-width: $b-contact) {
+        margin-bottom: -70px;
+      }
+    }
+    &-down {
+      width: 100%;
+      margin-top: -10px;
+      margin-bottom: 25px;
+      @media (min-width: $b-desktop) {
+        margin-top: -140px;
+      }
+    }
+  }
+  &-form {
+    width: 450px;
+    background-color: $background-input;
+    position: relative;
+    padding: 15px 0 25px;
+    color: $onyx;
+    box-shadow: 0px 2px 16px 2px rgba(0, 0, 0, 0.25);
+    @media (min-width: $b-contact) {
+    }
+    &-title {
+      margin: 10px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+    }
+    &-input {
+      margin: 10px 0;
+      & label {
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        & .o-contact-form-required {
+          margin-left: 10px;
+          font-size: 18px;
+        }
+      }
+      & textarea {
+        background-color: $background-interior-input;
+        border: 2px $border-input solid;
+        width: 100%;
+        height: 185px;
+      }
+      & input {
+        width: 100%;
+        border: 2px $border-input solid;
+        background-color: $background-interior-input;
+      }
+    }
+    &-submit {
+      display: block;
+      padding: 5px 55px;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: $rose-pale;
+      color: $background-interior-input;
+      border: none;
+      margin: 15px auto 0;
+      transition: ease-out 0.25s;
+      &:hover {
+        background-color: $spanish-viridian-hover;
+      }
+      &:active {
+        background-color: $spanish-viridian;
+      }
+    }
+    &-required {
+      color: $rose-pale;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+    }
+  }
+  &-fieldset {
+    padding: 0 20px;
+  }
+}

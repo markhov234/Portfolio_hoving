@@ -20,7 +20,7 @@ const AccueilNews = (props) => {
             key={index}
           >
             <figure>
-              <img alt={project.name} src={`${project.image}`}></img>
+              <img alt={project.name} src={`${project.image.couverture}`}></img>
               <div className="o-accueil-realisation-figcaption">
                 Réalisé par
                 <span className="o-accueil-realisation-figcaption-span"></span>

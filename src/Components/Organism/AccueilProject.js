@@ -11,8 +11,9 @@ const AccueilProject = (props) => {
   const { id } = useParams();
 
   // J'UTILISE DONC LE ID POUR RÉCUPERER LE PROJET A PARTIR DU JSON LOCAUX
-  const currentProject = ProjectsData.projets[id];
-  console.log(ProjectsData.projets[id].id);
+  const currentProject = ProjectsData.projets[id - 1];
+  console.log(currentProject.technologie);
+  // console.log(ProjectsData.projets[id].id);
   // #TODO: Faire UNE FUNCTION ''BACKEND'' pour trouver le bon id. Faire une boucle qui rentre dans tous les projets et regarde si l'id est égal a l'id envoyer dans le url
 
   return (
@@ -40,6 +41,10 @@ const AccueilProject = (props) => {
           </picture>
         </figure>
 
+        <h3 className="o-accueil-project--techno-title">
+          {" "}
+          Technologies utilisées
+        </h3>
         <ul className="o-accueil-project--techno-list --center">
           {currentProject.technologie.map((technologie, index) => (
             <li key={index}>
@@ -63,44 +68,15 @@ const AccueilProject = (props) => {
         </figure>
         <div className="o-accueil-project--liked-zone">
           <Carousel className="--center" variant="dark">
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={currentProject.image}
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={currentProject.image}
-                alt="Second slide"
-              />
-              <Carousel.Caption>
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={currentProject.image}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
+            {currentProject.image.desktop.map((image, index) => (
+              <Carousel.Item key={index}>
+                <img
+                  className="d-block o-accueil-project-image"
+                  src={image}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+            ))}
           </Carousel>
         </div>
       </div>

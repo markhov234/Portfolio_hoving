@@ -4,10 +4,14 @@
 @import "./Organism/accueil-projet";
 @import "./Organism/footer";
 @import "./Organism/background";
-@import "./Organism/navigation-mobile";
-@import "./Organism/navigation-desktop";
+@import "./Organism/organismProfil";
+@import "./Organism/organismContact";
+// @import "./Organism/navigation-mobile";
+// @import "./Organism/navigation-desktop";
+@import "./Organism/navigation-v2";
 @import "./Pages/accueil";
 @import "./Atoms/link";
+@import "./Atoms/title";
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 html {

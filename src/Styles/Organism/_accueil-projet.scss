@@ -1,11 +1,15 @@
 .o-accueil-project {
   position: relative;
 
+  &-image {
+    max-width: 100%;
+    margin: auto;
+  }
   &--title {
     font-size: 12vw;
     text-align: center;
     font-weight: 500;
-    padding: 20px 0 30px;
+    padding: 60px 0 30px;
     background-color: $onyx;
     margin: 0;
     color: $platinum;
@@ -79,6 +83,16 @@
   }
   &--techno {
     width: 100%;
+
+    &-title {
+      text-align: center;
+      margin: 35px 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+      @media (min-width: $b-desktop) {
+        font-size: 2.8rem;
+      }
+    }
     &-svg-top {
       margin: -40px 0 0;
       width: 100%;
@@ -115,6 +129,12 @@
           width: 100%;
           text-align: center;
           margin-bottom: 10px;
+        }
+      }
+      & img {
+        max-width: 48px;
+        @media (min-width: $b-desktop) {
+          max-width: 48px;
         }
       }
     }

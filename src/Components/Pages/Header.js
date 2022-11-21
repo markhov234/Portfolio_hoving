@@ -1,10 +1,9 @@
-import Navigation from "./Organism/Navigation";
+import NavigationVTwo from "../Organism/NavigationVTwo";
 const Header = (props) => {
-  // Définis la function on Click ici
   return (
     <header className="o-header">
       <div className="o-header--content ">
-        <Navigation screenWidth={props.screenWidth}></Navigation>
+        <NavigationVTwo screenWidth={props.screenWidth}></NavigationVTwo>
       </div>
     </header>
   );

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Site web folks",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing. Pour cela, j'ai réorganiser les classes selon la méthodologie du Atomic design. Le tout étant principalement fait sur custom template dans wordpress.",
       "technologie": [
         "Wordpress",
         "Git",
@@ -13,39 +13,147 @@
         "Atomic Design"
       ],
       "url": "https://folksrh.com/",
-      "image": "/images/projetTest.jpg"
+      "image": {
+        "desktop": [
+          "/images/folks/folks_table_1.jpg",
+          "/images/folks/folks_table_2.jpg",
+          "/images/folks/folks_table_3.jpg",
+          "/images/folks/folks_table_4.jpg",
+          "/images/folks/folks_mobile_1.jpg",
+          "/images/folks/folks_mobile_2.jpg"
+        ],
+        "couverture": "/images/folks/folks_couverture.jpg"
+      }
     },
     {
       "id": 2,
       "name": "Site web de la TIM",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "Lors de notre épreuve finale de la technique, il était question de faire un site promettant le programme ainsi que ses finissants. Réaliser de zéro en utilisant un custom template de wordpress. Site web qui a été réalisé et designé par moi-même. Ce projet m'a permis d'approfondir mes connaissances sur l'UX/UI ainsi qu'un design qui doit correspondre à la clientèle majeure du site web.",
       "technologie": ["Wordpress", "Php", "Sass", "Css"],
-      "url": "https://google.com/",
-      "image": "/images/projetTest.jpg"
+      "url": "",
+      "image": {
+        "desktop": [
+          "/images/tim/tim_table_1.jpg",
+          "/images/tim/tim_table_2.jpg",
+          "/images/tim/tim_table_3.jpg",
+          "/images/tim/tim_table_4.jpg"
+        ],
+        "couverture": "/images/tim/tim_couverture.jpg"
+      }
     },
     {
       "id": 3,
-      "name": "Projet de la TIM en équipe",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "technologie": ["Wordpress", "Php", "Sass", "Css", "Atomic Design"],
+      "name": "Brulerie TIM",
+      "description": "Lors de ma technique, j'avais comme mandant de réaliser un site web fictif concernant une brulerie de café. Design et intégration réalisé par moi, il était question d'intégrer différents contenus qui peuvent survenir dans le marché du travail, par exemple : un login, une vitrine de café, etc. J'ai appris sur le design pixel perfect et de reproduire celui-ci à l'aide du scss.",
+      "technologie": ["Php", "Sass", "Css", "Atomic Design"],
       "url": "https://folksrh.com/",
-      "image": "/images/projetTest.jpg"
+      "image": {
+        "desktop": [
+          "/images/brulerie/brulerie_table_1.jpg",
+          "/images/brulerie/brulerie_table_2.jpg",
+          "/images/brulerie/brulerie_table_3.jpg",
+          "/images/brulerie/brulerie_mobile_1.jpg",
+          "/images/brulerie/brulerie_mobile_2.jpg"
+        ],
+        "couverture": "/images/brulerie/brulerie_couverture.jpg"
+      }
     },
     {
       "id": 4,
-      "name": "Site web folks",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "technologie": ["Wordpress", "Php", "Sass", "Css", "Atomic Design"],
+      "name": "Pastèque",
+      "description": "Création d'un site web ayant comme thème une vitrine de livre. Faits en équipe de quatre personnes, nous avions comme mandat de réaliser les maquettes et par la suite les reproduires en utilisant Laravel. Ce site web fut le premier projet avec beaucoup de back-end dont j'étais le responsable. Création du compte, connexion au compte, ajoutée des livres au panier, envoie d'un reçu à l'adresse enregistrée. Il fut question de développer un CRUD et une database pour tous ses livres.  ",
+      "technologie": ["Php", "Sass", "Css", "Laravel"],
       "url": "https://folksrh.com/",
-      "image": "/images/projetTest.jpg"
+      "image": {
+        "desktop": [
+          "/images/pasteque/pasteque_table_1.jpg",
+          "/images/pasteque/pasteque_table_2.jpg",
+          "/images/pasteque/pasteque_table_3.jpg",
+          "/images/pasteque/pasteque_table_4.jpg",
+          "/images/pasteque/pasteque_mobile_1.jpg",
+          "/images/pasteque/pasteque_mobile_2.jpg"
+        ],
+        "couverture": "/images/pasteque/pasteque_couverture.jpg",
+        "description": [""]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Pagaie Québec",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "technologie": ["Laravel", "Php", "Sass", "Css"],
+      "url": "https://folksrh.com/",
+      "mainImage": "/images/pasteque/pasteque_couverture.jpg",
+      "image": {
+        "desktop": [
+          "/images/pagaie/pagaie_qc_2.jpg",
+          "/images/pagaie/pagaie_qc_1.jpg",
+          "/images/pagaie/pagaie_qc_3.jpg"
+        ],
+        "couverture": "/images/pagaie/pagaie_couverture.jpg",
+        "description": [""]
+      }
     }
   ],
   "profil": [
     {
       "nom": "Marc-Antoine Hovington",
-      "description": "Marc-Antoine Hovington",
-      "age": "Marc-Antoine Hovington",
-      "role": "Marc-Antoine Hovington"
+      "description": "Développeur Web",
+      "age": "28 ans",
+      "role": "Marc-Antoine Hovington",
+      "technologie": [
+        {
+          "techno": "Php",
+          "level": 8
+        },
+        {
+          "techno": "Laravel",
+          "level": 5
+        },
+        {
+          "techno": "VueJs",
+          "level": 6
+        },
+        {
+          "techno": "React",
+          "level": 6
+        },
+        {
+          "techno": "Html",
+          "level": 9
+        },
+        {
+          "techno": "Css",
+          "level": 8
+        },
+        {
+          "techno": "Sass",
+          "level": 8
+        },
+        {
+          "techno": "Javascript",
+          "level": 7
+        },
+        {
+          "techno": "Github",
+          "level": 7
+        },
+        {
+          "techno": "Wordpress",
+          "level": 7
+        },
+        {
+          "techno": "MySql",
+          "level": 6
+        }
+      ],
+      "passion": [
+        "Jeux Vidéos",
+        "Les relations humaines",
+        "Apprendre des langues",
+        "La nuit",
+        "L'entraînement"
+      ]
     }
   ]
 }
