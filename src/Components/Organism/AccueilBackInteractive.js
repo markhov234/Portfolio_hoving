@@ -4,7 +4,7 @@ import { useState } from "react";
 const AccueilBackInteractive = () => {
   const [ arrayTriangle ] = useState(backgroundTriangle(35))
   return (
-    <div className="p-accueil-background">
+    <aside className="o-accueil-background">
       <div className="o-imageBackground--zone-desktop">
         {arrayTriangle.arrayTriangle.map((triangle, index) => (
           <TriangleBackground
@@ -19,7 +19,7 @@ const AccueilBackInteractive = () => {
           />
         ))}
       </div>
-    </div>
+    </aside>
   );
 };
 

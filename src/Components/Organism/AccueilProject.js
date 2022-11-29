@@ -17,9 +17,9 @@ const AccueilProject = (props) => {
   // #TODO: Faire UNE FUNCTION ''BACKEND'' pour trouver le bon id. Faire une boucle qui rentre dans tous les projets et regarde si l'id est égal a l'id envoyer dans le url
 
   return (
-    <div className="o-accueil-project">
+    <main className="o-accueil-project">
       <h1 className="o-accueil-project--title">{currentProject.name}</h1>
-      <div className="o-accueil-project--article-zone">
+      <section className="o-accueil-project--article-zone">
         <div className="o-accueil-project--article --center">
           <img
             className="o-accueil-project--article-image"
@@ -31,8 +31,8 @@ const AccueilProject = (props) => {
             {currentProject.description}
           </p>
         </div>
-      </div>
-      <div className="o-accueil-project-techno">
+      </section>
+      <section className="o-accueil-project-techno">
         <figure className="o-accueil-project--techno-svg-top">
           <picture>
             <source media="(min-width:1800px)" srcSet={WaveSvgWide} />
@@ -57,8 +57,8 @@ const AccueilProject = (props) => {
             </li>
           ))}
         </ul>
-      </div>
-      <div className="o-accueil-project--liked">
+      </section>
+      <section className="o-accueil-project--liked">
         <figure className="o-accueil-project--article-svg-bottom">
           <picture>
             <source media="(min-width:1800px)" srcSet={WaveSvgWide} />
@@ -79,8 +79,8 @@ const AccueilProject = (props) => {
             ))}
           </Carousel>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

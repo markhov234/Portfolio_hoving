@@ -8,13 +8,14 @@ const AccueilNews = (props) => {
   // #TODO:Optimiser les composants pour les mettres plus petits et facile à revenir dedans
   // #TODO: Ajouter un LAZY LOAD pour les images et un LOADING status quand les données chargent
   return (
-    <div className="o-accueil-realisation">
+    <main className="o-accueil-realisation">
       <h1 className="o-header--title">Mon Portfolio</h1>
       <AccueilBackInteractive />
       {/* {isProjectVisible ? <AccueilProject isVisible={[isProjectVisible,setIsProjectVisible]} currentProject={currentProject} /> : ""} */}
-      <div className="o-accueil-realisation-zone">
+      <section className="o-accueil-realisation-zone">
         {ProjectsData.projets.map((project, index) => (
           <Link
+          aria-label={project.name}
             className="o-accueil-realisation-figure"
             to={"projects/" + project.id}
             key={index}
@@ -29,8 +30,8 @@ const AccueilNews = (props) => {
             </figure>
           </Link>
         ))}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
