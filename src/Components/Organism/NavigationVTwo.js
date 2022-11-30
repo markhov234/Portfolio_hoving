@@ -7,15 +7,11 @@ const NavigationVTwo = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [menuBackground, setMenuBackground] = useState(false);
   const breakpointDesktop = 1024;
-
-  // let menu = null;
   let icon = null;
-  // if (props.screenWidth > breakpointDesktop) {
-  //   setShowMenu(false);
-  // }
   if (showMenu) {
     icon = (
       <FontAwesomeIcon
+        aria-label="close"
         className="o-navigation--mobile-icon close"
         icon={faClose}
         onClick={() => setShowMenu(!showMenu)}
@@ -24,6 +20,7 @@ const NavigationVTwo = (props) => {
   } else {
     icon = (
       <FontAwesomeIcon
+      aria-label="open"
         className="o-navigation--mobile-icon open"
         icon={faBars}
         onClick={() => setShowMenu(!showMenu)}
