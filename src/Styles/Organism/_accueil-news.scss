@@ -30,15 +30,23 @@
     }
     &-figcaption {
       position: relative;
-      top: -185px;
+      top: -120px;
       text-align: center;
       margin: 0 20px;
       background-color: white;
-      border-radius: 5%;
+      border-radius: 2%;
       opacity: 0;
       transition: ease-in-out 0.2s;
       @media (min-width: $b-mobile) {
-        top: -190px;
+        top: -160px;
+        font-size: 1.2rem;
+      }
+      @media (min-width: $b-desktop) {
+        top: -140px;
+        font-size: 1.2rem;
+      }
+      @media (min-width: $b-large-desktop) {
+        top: -220px;
         font-size: 1.2rem;
       }
     }
