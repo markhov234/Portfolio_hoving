@@ -36,7 +36,7 @@ const OrganismContact = () => {
           src={ContactSvg.ContactDivUp}
           alt=""
         ></img>
-        <section className="o-contact-content --center">
+        <section className="o-contact-content">
           <h2 className="o-contact-content-title">Informations</h2>
           <ul className="o-contact-content-list">
             <li className="o-contact-content-items">
