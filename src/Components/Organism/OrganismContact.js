@@ -1,31 +1,26 @@
 import React, { useState } from "react";
 import ContactSvg from "../ReactHook/importContactSvg";
+import { send } from "emailjs-com";
 const OrganismContact = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  console.log(ContactSvg.ContactDivDown);
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    message: "",
+    reply_to: "",
+  });
+
   const handleChange = (e) => {
-    setName(e.target.value);
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
-  const handleDescriptionChange = (e) => {
-    setDescription(e.target.value);
-  };
+
   const handleSubmit = (e) => {
-    alert(
-      'A form was submitted with Name :"' +
-        name +
-        '" and Email :"' +
-        email +
-        '"' +
-        '" and Description :"' +
-        description +
-        '"'
-    );
     e.preventDefault();
+    send("service_gnqif47", "template_pq42ve6", toSend, "4YpfuHc4lDkTKZwnr")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
   };
   return (
     <main className="o-contact">
@@ -63,39 +58,35 @@ const OrganismContact = () => {
             </h3>
             <fieldset className="o-contact-fieldset">
               <div className="o-contact-form-input">
-                <label for="email">
+                <label>
                   Adresse Courriel
                   <span className="o-contact-form-required">*</span>{" "}
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  value={email}
+                  name="reply_to"
+                  value={toSend.reply_to}
                   required
-                  onChange={(e) => {
-                    handleEmailChange(e);
-                  }}
+                  onChange={handleChange}
                 />
               </div>
               <div className="o-contact-form-input">
                 <label>Nom Complet </label>
                 <input
                   type="text"
-                  value={name}
+                  name="from_name"
+                  value={toSend.from_name}
                   required
-                  onChange={(e) => {
-                    handleChange(e);
-                  }}
+                  onChange={handleChange}
                 />
               </div>
               <div className="o-contact-form-input">
                 <label>Message </label>
                 <textarea
-                  value={description}
+                  name="message"
+                  value={toSend.message}
                   required
-                  onChange={(e) => {
-                    handleDescriptionChange(e);
-                  }}
+                  onChange={handleChange}
                 />
               </div>
               <span className="o-contact-form-required">* obligatoire</span>
