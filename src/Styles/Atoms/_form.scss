@@ -1,0 +1,24 @@
+.showPositive {
+  border: 2px solid $spanish-viridian-hover;
+  & input,
+  textarea {
+    border: 2px solid $spanish-viridian-hover;
+  }
+  & .o-contact-form-submit {
+    background-color: $spanish-viridian-hover;
+    border: none;
+  }
+}
+
+form {
+  & .hidden {
+    display: none;
+  }
+  & .show {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: $spanish-viridian-hover;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ContactSvg from "../ReactHook/importContactSvg";
 import { send } from "emailjs-com";
 const OrganismContact = () => {
+  const [formState, setFormState] = useState(null);
   const [toSend, setToSend] = useState({
     from_name: "",
     message: "",
@@ -17,11 +18,28 @@ const OrganismContact = () => {
     send("service_gnqif47", "template_pq42ve6", toSend, "4YpfuHc4lDkTKZwnr")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
+        setFormState(true);
       })
       .catch((err) => {
         console.log("FAILED...", err);
+        setFormState(false);
       });
   };
+
+  const formSendClass = () => {
+    let optionClass = null;
+    if (formState == null) {
+      optionClass = "showNothing";
+    } else {
+      if (formState) {
+        optionClass = "showPositive";
+      } else {
+        optionClass = "showNegative";
+      }
+    }
+    return optionClass;
+  };
+
   return (
     <main className="o-contact">
       <h1 className="o-contact-title a-title-h1">Me Contacter</h1>
@@ -48,7 +66,7 @@ const OrganismContact = () => {
             </li>
           </ul>
           <form
-            className="o-contact-form"
+            className={`o-contact-form ${formSendClass()} `}
             onSubmit={(e) => {
               handleSubmit(e);
             }}
@@ -91,6 +109,7 @@ const OrganismContact = () => {
               </div>
               <span className="o-contact-form-required">* obligatoire</span>
             </fieldset>
+            <p className={formState ? "show" : "hidden"}> Message envoyé</p>
             <input
               className="o-contact-form-submit"
               type="submit"

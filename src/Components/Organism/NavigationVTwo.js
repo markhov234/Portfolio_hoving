@@ -20,7 +20,7 @@ const NavigationVTwo = (props) => {
   } else {
     icon = (
       <FontAwesomeIcon
-      aria-label="open"
+        aria-label="open"
         className="o-navigation--mobile-icon open"
         icon={faBars}
         onClick={() => setShowMenu(!showMenu)}
