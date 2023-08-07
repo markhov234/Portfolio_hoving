@@ -14,23 +14,25 @@ const OrganismProfil = () => {
             À propos de moi
           </h3>
           <div className="o-profil-information-presentation">
+          <div className="o-profil-information-presentation-picture">
+
             <img
               className="o-profil-information-picture"
               alt=""
-              src="https://fakeimg.pl/550/"
+              src="/images/profil_square.jpg"
             ></img>
+             </div>
             <div className="o-profil-information-description">
               <p className="o-profil-information-name">
                 Marc-Antoine Hovington
               </p>
               <div className="o-profil-information-text">
-                Eiusmod nostrud ullamco incididunt irure non duis in id ex
-                voluptate elit pariatur. Qui amet dolore excepteur anim laborum
-                ex nisi elit nostrud ut. Ad ad dolore irure est pariatur.
-                Laboris nisi labore exercitation voluptate est non consectetur.
-                Lorem id nisi cupidatat consequat mollit sit eiusmod eiusmod
-                enim officia nisi exercitation est pariatur. Dolor quis
-                voluptate dolor est laboris tempor mollit do veniam.
+                <p> Je m'appelle Marc-Antoine Hovington, développeur front-end et travailleur autonome. </p>
+                <p> J'ai une véritable passion pour la nature et les relations humaines.
+                  En tant que développeur, je suis constamment motivé à améliorer mes compétences et à rester à jour avec les dernières technologies et tendances du secteur.</p>
+<p>J'apprécie également les défis et je suis capable de travailler de manière autonome pour atteindre mes objectifs.
+Si vous êtes à la recherche d'une personne passionnée et dévouée, n'hésitez pas à me contacter. Je serais ravi de discuter de mes compétences et de voir comment je pourrais contribuer à votre entreprise.</p>
+    
               </div>
             </div>
           </div>

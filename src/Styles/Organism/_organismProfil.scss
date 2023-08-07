@@ -192,6 +192,16 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 0 0 55px;
+      &-picture{
+        width: 35%;
+        @media (max-width: $b-desktop) {
+          width: 45%;
+        }
+        @media (max-width: $b-mobile) {
+          width: 85%;
+          margin: auto;
+        }
+      }
     }
     &-text{
       line-height: 25px;
@@ -202,47 +212,44 @@
       }
     }
     &-description{
-      width: 100%;
-      @media (min-width: $b-mobile) {
-        width: 58%;
-      }
-      @media (min-width: $b-desktop) {
-        width: 58%;
-      }
+    width: 100%;
+    @media (min-width: $b-mobile) {
+      width: 50%;
+    }
     }
     &-name{
        margin: 10px 0;
        font-size: 5.5vw;
        font-weight: 600;
        color: $rose-pale;
+       text-align: center;
        @media (min-width: $b-mobile) {
         margin: 10px 0;
         font-size: 3.5vw;
+        text-align: left;
       }
-      @media (min-width: $b-desktop) {
+      @media (max-width: $b-desktop) {
         margin: 10px 0;
       }
     }
     &-picture{
       width: 100%;
-      @media (min-width: $b-mobile) {
-        width: 28%;
-      }
-      @media (min-width: $b-desktop) {
-        width: 28%;
-      }
+      border-radius: 50%;
     }
     &-title{
     font-size: 7vw;
     font-weight: 600;
     margin: 30px 0;
+    text-align: center;
     @media (min-width: $b-mobile) {
       font-size: 4vw;
       font-weight: 500;
+      text-align: left;
     }
     @media (min-width: $b-desktop) {
       font-size: 4vw;
       font-weight: 500;
+      text-align: left;
     }
     }
 
@@ -257,6 +264,7 @@
       margin: 20px 0 10px ;
       @media (min-width: $b-desktop) {
         margin: 20px 0 ;
+        text-align: center;
       }
     }
     &-list{
