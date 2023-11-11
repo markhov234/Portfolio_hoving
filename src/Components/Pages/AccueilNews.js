@@ -2,6 +2,9 @@
 import AccueilBackInteractive from "./../Organism/AccueilBackInteractive";
 import ProjectsData from "./../../BackEnd/data.json";
 import { Link } from "react-router-dom";
+import OrganismProfil from "../Organism/OrganismProfil";
+import OrganismContact from "../Organism/OrganismContact";
+
 const AccueilNews = (props) => {
   // #TODO: Faire du méngage dans cette page
   // #TODO: Réorganiser la structure du projet
@@ -11,8 +14,8 @@ const AccueilNews = (props) => {
     <main className="o-accueil-realisation">
       <h1 className="o-header--title">Mon Portfolio</h1>
       <AccueilBackInteractive />
-      {/* {isProjectVisible ? <AccueilProject isVisible={[isProjectVisible,setIsProjectVisible]} currentProject={currentProject} /> : ""} */}
       <section className="o-accueil-realisation-zone">
+        <OrganismProfil/>
         {ProjectsData.projets.map((project, index) => (
           <Link
           aria-label={project.name}
@@ -30,6 +33,7 @@ const AccueilNews = (props) => {
             </figure>
           </Link>
         ))}
+        <OrganismContact/>
       </section>
     </main>
   );

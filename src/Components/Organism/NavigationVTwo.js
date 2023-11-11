@@ -91,16 +91,6 @@ const NavigationVTwo = (props) => {
                 Profil
               </Link>
             </li>
-            <li className="o-menu-items">
-              <Link
-                to="/contact"
-                onClick={() => {
-                  setShowMenu(!showMenu);
-                }}
-              >
-                Me contacter
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

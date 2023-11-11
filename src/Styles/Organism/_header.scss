@@ -1,12 +1,12 @@
 .o-header {
   &--title {
-    margin-top: 50px;
-    font-size: 6vw;
+    margin-top: 90px;
+    font-size: 4vw;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     z-index: 3;
     @media (max-width: $b-desktop) {
-      font-size: 8vw;
+      font-size: 7vw;
       margin-top: 8vw;
       margin-bottom: 4vw;
     }

@@ -3,77 +3,23 @@
   &-title {
     &.a-title-h1 {
       border: none;
+      font-size: 2.5vw;
+      margin-bottom: 65px;
       @media (min-width: $b-contact) {
         padding-bottom: 0;
       }
     }
   }
   &-zone {
-    @media (min-width: $b-desktop) {
-      margin-top: -90px;
-    }
-  }
-  &-content {
-    background-color: $onyx;
-    color: $platinum;
-    font-weight: 500;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    @media (min-width: $b-contact) {
-      padding-bottom: 30px;
-    }
-    @media (min-width: $b-desktop) {
-      margin-top: -90px;
-    }
-    &-list {
-      list-style-type: none;
-      padding: 0;
-    }
-    &-items {
-      margin: 15px 0;
-      display: flex;
-    }
-    &-icon {
-      margin-right: 10px;
-      // margin-left: -3px;
-      width: 50px;
-      height: auto;
-      background-color: $spanish-viridian;
-      display: block;
-    }
-    &-title {
-      text-align: center;
-      font-size: 38px;
-      font-weight: 600;
-      margin-top: -40px;
-      width: 100%;
-      margin-bottom: 40px;
-    }
-  }
-  &-div {
-    &-up {
-      width: 100%;
-      margin-bottom: -10px;
-      @media (min-width: $b-contact) {
-        margin-bottom: -70px;
-      }
-    }
-    &-down {
-      width: 100%;
-      margin-top: -10px;
-      margin-bottom: 25px;
-      @media (min-width: $b-desktop) {
-        margin-top: -140px;
-      }
-    }
+    margin: 25px;
   }
   &-form {
     width: 450px;
-    background-color: $background-input;
+    background-color: $spanish-viridian-hover-transparent-75;
     position: relative;
     padding: 15px 0 25px;
     color: $onyx;
+    margin: auto;
     box-shadow: 0px 2px 16px 2px rgba(0, 0, 0, 0.25);
     @media (min-width: $b-contact) {
     }
@@ -96,13 +42,15 @@
       }
       & textarea {
         background-color: $background-interior-input;
-        border: 2px $border-input solid;
+        outline: none;
         width: 100%;
+        border: none;
         height: 185px;
       }
       & input {
+        outline: none;
+        border: none;
         width: 100%;
-        border: 2px $border-input solid;
         background-color: $background-interior-input;
       }
     }
@@ -110,21 +58,22 @@
       display: block;
       padding: 5px 55px;
       font-size: 18px;
-      font-weight: 500;
-      background-color: $rose-pale;
-      color: $background-interior-input;
+      font-weight: 600;
+      background-color: $background-input;
+      color: black;
       border: none;
       margin: 15px auto 0;
       transition: ease-out 0.25s;
       &:hover {
-        background-color: $spanish-viridian-hover;
+        background-color: $onyx;
+        color: $platinum;
       }
       &:active {
-        background-color: $spanish-viridian;
+        background-color: $mango-tango;
+        color: black;
       }
     }
     &-required {
-      color: $rose-pale;
       font-size: 14px;
       font-weight: 700;
       display: block;

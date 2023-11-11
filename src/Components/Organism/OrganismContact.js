@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ContactSvg from "../ReactHook/importContactSvg";
 import { send } from "emailjs-com";
 const OrganismContact = () => {
   const [formState, setFormState] = useState(null);
@@ -41,30 +40,10 @@ const OrganismContact = () => {
   };
 
   return (
-    <main className="o-contact">
+    <section className="o-contact">
       <h1 className="o-contact-title a-title-h1">Me Contacter</h1>
       <div className="o-contact-zone">
-        <img
-          className="o-contact-div-up"
-          src={ContactSvg.ContactDivUp}
-          alt=""
-        ></img>
         <section className="o-contact-content">
-          <h2 className="o-contact-content-title">Informations</h2>
-          <ul className="o-contact-content-list">
-            <li className="o-contact-content-items">
-              <span className="o-contact-content-icon"></span>
-              Ville de Québec,QC.
-            </li>
-            <li className="o-contact-content-items">
-              <span className="o-contact-content-icon"></span>
-              418-230-9528
-            </li>
-            <li className="o-contact-content-items">
-              <span className="o-contact-content-icon"></span>
-              hovington234@gmail.com
-            </li>
-          </ul>
           <form
             className={`o-contact-form ${formSendClass()} `}
             onSubmit={(e) => {
@@ -117,14 +96,8 @@ const OrganismContact = () => {
             />
           </form>
         </section>
-        <img
-          className="o-contact-div-down"
-          src={ContactSvg.ContactDivDown}
-          alt=""
-        ></img>
-        <section className="--center"></section>
       </div>
-    </main>
+    </section>
   );
 };
 
