@@ -13,9 +13,11 @@ const TriangleBackground = (props) => {
   if (props.parallaxY === true) {
     parallaxY = "-";
   }
+  // const rotationTriangle = Math.floor(Math.random() * 6);
 
   return (
     <svg
+    className={`background-triangle`}
       fill="none"
       width={props.width}
       height={props.width}

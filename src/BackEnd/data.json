@@ -155,5 +155,33 @@
         "L'entraînement"
       ]
     }
+  ],
+  "reseaux": [
+    {
+      "name":"Youtube",
+      "url":"https://folksrh.com/",
+      "color":"rgba(255, 0, 0, 0.75)"
+    },
+    {
+      "name":"LinkedIn",
+      "url":"https://folksrh.com/",
+      "color":"rgba(0, 114, 177, 0.75)"
+    },
+    {
+      "name":"Facebook",
+      "url":"https://folksrh.com/",
+      "color":"rgba(24, 119, 242, 0.75)"
+    },
+    {
+      "name":"Instagram",
+      "url":"https://folksrh.com/",
+      "color":"linear-gradient(180deg, rgba(104, 80, 255, 1) 0%, rgba(236, 83, 104, 1) 45.83%, rgba(255, 209, 47, 1) 100%) transparent 0.75"
+    },
+    {
+      "name":"Github",
+      "url":"https://folksrh.com/",
+      "color":"rgba(36, 41, 46, 0.75)"
+    }
   ]
+
 }

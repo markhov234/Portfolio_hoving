@@ -9,16 +9,43 @@
   }
 }
 
-// @keyframes positionYPositive {
-//   0% {
-//     transform: translateX(0%) translateY(0%);
-//   }
+.background-triangle {
+  &-0 {
+    animation: rotationPos 80s linear infinite;
+  }
+  &-1 {
+    animation: rotationNeg 120s linear infinite;
+  }
+  &-2 {
+    animation: rotationPos 100s linear infinite;
+  }
+  &-3 {
+    animation: rotationPos 60s linear infinite;
+  }
+  &-4 {
+    animation: rotationNeg 60s linear infinite;
+  }
+  &-5 {
+    animation: rotationNeg 40s linear infinite;
+  }
+}
 
-//   50% {
-//     transform: translateX(25%) translateY(25%);
-//   }
+@keyframes rotationPos {
+  0% {
+    transform: rotate(0deg);
+  }
 
-//   100% {
-//     transform: translateX(1%) translateY(1%);
-//   }
-// }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationNeg {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}

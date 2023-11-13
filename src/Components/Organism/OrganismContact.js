@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ProjectsData from "./../../BackEnd/data.json";
 import { send } from "emailjs-com";
 const OrganismContact = () => {
   const [formState, setFormState] = useState(null);
@@ -95,6 +96,18 @@ const OrganismContact = () => {
               value="Envoyer"
             />
           </form>
+        </section>
+        <section className="o-contact-medialink">
+          <div>
+            <p className="o-contact-medialink-title">Situe dans la region de quebec</p>
+            <ul className="o-contact-medialink-list">
+            {ProjectsData.reseaux.map((reseau, index) => (
+            <li className={`o-contact-medialink-item `+ reseau.name}>
+            <a key={index} href="#">{reseau.name}</a>
+            </li>
+            ))}
+            </ul>
+          </div>
         </section>
       </div>
     </section>
