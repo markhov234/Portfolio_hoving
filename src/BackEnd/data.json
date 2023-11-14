@@ -159,6 +159,11 @@
   "reseaux": [
     {
       "name":"Youtube",
+      "url":"https://www.youtube.com/channel/UCv5RkJS4JeWlpIR7YqRvifQ",
+      "color":"rgba(255, 0, 0, 0.75)"
+    },
+    {
+      "name":"Gmail",
       "url":"https://folksrh.com/",
       "color":"rgba(255, 0, 0, 0.75)"
     },
@@ -169,12 +174,12 @@
     },
     {
       "name":"Facebook",
-      "url":"https://folksrh.com/",
+      "url":"https://www.facebook.com/marcantoine.hovington.92",
       "color":"rgba(24, 119, 242, 0.75)"
     },
     {
       "name":"Instagram",
-      "url":"https://folksrh.com/",
+      "url":"https://www.instagram.com/hovinton/",
       "color":"linear-gradient(180deg, rgba(104, 80, 255, 1) 0%, rgba(236, 83, 104, 1) 45.83%, rgba(255, 209, 47, 1) 100%) transparent 0.75"
     },
     {

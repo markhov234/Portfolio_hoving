@@ -42,9 +42,6 @@ const Navigation = (props) => {
           <li className="o-navigation--mobile--menu-item">
             <Link to="/profil">Profil</Link>
           </li>
-          <li className="o-navigation--mobile--menu-item">
-          <Link to="/contact">Me contacter</Link>
-          </li>
         </div>
       </ul>
     );
@@ -57,9 +54,6 @@ const Navigation = (props) => {
         </li>
         <li className="o-navigation--desktop--menu-item">
         <Link to="/profil">Profil</Link>
-        </li>
-        <li className="o-navigation--desktop--menu-item">
-        <Link to="/contact">Me contacter</Link>
         </li>
       </ul>
     );

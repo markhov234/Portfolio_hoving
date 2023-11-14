@@ -7,7 +7,7 @@ import AccueilProject from "./../Organism/AccueilProject";
 import ScrollToTop from "../ReactHook/ScrollToTop";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// import Footer from "./../Organism/Footer";
+import Footer from "./../Organism/Footer";
 import useViewport from "./../ReactHook/UseViewport.js";
 const Accueil = (props) => {
   const { screenWidth } = useViewport();
@@ -32,7 +32,6 @@ const Accueil = (props) => {
             ></Route>
           </Routes>
         </div>
-        {/* <Footer /> */}
       </div>
     </Router>
   );

@@ -13,6 +13,9 @@
     "bootstrap": "^5.2.2",
     "emailjs-com": "^3.2.0",
     "lodash.debounce": "^4.0.8",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-carousel": "^4.1.1",
@@ -27,6 +30,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build-css": "postcss src/Styles/Theme.scss -o build/styles.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0"
   }
 }
