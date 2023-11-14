@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProjectsData from "./../../BackEnd/data.json";
+import allIcons from "../ReactHook/importIconsImg";
 import { send } from "emailjs-com";
 const OrganismContact = () => {
   const [formState, setFormState] = useState(null);
@@ -42,18 +43,18 @@ const OrganismContact = () => {
 
   return (
     <section className="o-contact">
-      <h1 className="o-contact-title a-title-h1">Me Contacter</h1>
+      <h2 className="o-contact-title a-title-h2">Me Contacter</h2>
       <div className="o-contact-zone">
         <section className="o-contact-content">
+        <h3 className="o-contact-form-title">
+              Quelques choses à me dire ?
+            </h3>
           <form
             className={`o-contact-form ${formSendClass()} `}
             onSubmit={(e) => {
               handleSubmit(e);
             }}
           >
-            <h3 className="o-contact-form-title">
-              Quelques choses à me dire ?
-            </h3>
             <fieldset className="o-contact-fieldset">
               <div className="o-contact-form-input">
                 <label>
@@ -99,11 +100,16 @@ const OrganismContact = () => {
         </section>
         <section className="o-contact-medialink">
           <div>
-            <p className="o-contact-medialink-title">Situe dans la region de quebec</p>
+            <h3 className="o-contact-medialink-title">Réseaux sociaux</h3>
             <ul className="o-contact-medialink-list">
             {ProjectsData.reseaux.map((reseau, index) => (
             <li className={`o-contact-medialink-item `+ reseau.name}>
-            <a key={index} href="#">{reseau.name}</a>
+            <a key={index} href="#">
+              <p>{reseau.name}</p>
+            <span className="o-contact-medialink-item-icons">
+            <img draggable='false' src={allIcons[reseau.name]} alt="" />
+            </span>
+            </a>
             </li>
             ))}
             </ul>

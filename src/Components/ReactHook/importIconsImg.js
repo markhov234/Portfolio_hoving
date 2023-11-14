@@ -10,12 +10,20 @@ import Javascript from "../../Images/icons/javascript_icon.svg";
 import Laravel from "../../Images/icons/laravel_icon.svg";
 import React from "../../Images/icons/react_icon.svg";
 import VueJs from "../../Images/icons/vuejs_icon.svg";
+import Youtube from "../../Images/icons/youtube.png";
 import MySql from "../../Images/icons/mySql_icon.svg";
+import Instagram from "../../Images/icons/instagram.png";
+import Facebook from "../../Images/icons/facebook.png";
+import LinkedIn from "../../Images/icons/linkedin.png";
 
 const icons = {
   Github,
   Gmail,
+  Youtube,
   Linked,
+  Instagram,
+  Facebook,
+  LinkedIn,
   Php,
   Sass,
   Wordpress,
