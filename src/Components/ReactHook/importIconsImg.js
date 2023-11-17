@@ -15,9 +15,24 @@ import MySql from "../../Images/icons/mySql_icon.svg";
 import Instagram from "../../Images/icons/instagram.png";
 import Facebook from "../../Images/icons/facebook.png";
 import LinkedIn from "../../Images/icons/linkedin.png";
+import Atomic  from "../../Images/icons/atomicDesign.png";
+import Figma from "../../Images/icons/figma.png";
+import Illustrator from "../../Images/icons/illustrator.png";
+import Photoshop from "../../Images/icons/photoshop.png";
+import PremierePro from "../../Images/icons/premiere-pro.png";
+import Xd from "../../Images/icons/xd.png";
+import Tailwind from "../../Images/icons/tailwind.png";
+
 
 const icons = {
   Github,
+  Tailwind,
+  Atomic,
+  Figma,
+  Illustrator,
+  Photoshop,
+  PremierePro,
+  Xd,
   Gmail,
   Youtube,
   Linked,

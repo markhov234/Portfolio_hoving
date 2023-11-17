@@ -12,20 +12,35 @@
     }
     &-zone {
       z-index: 2;
+      width: 95%;
       display: flex;
       flex-direction: column;
-      margin: 0 20px;
+      margin: 25px 10px 0;
       @media (min-width: $b-mobile) {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
       }
       @media (min-width: $b-desktop) {
-        width: 85%;
+        // width: 85%;
         margin: auto;
       }
-      & figure {
-        margin: 0;
+      &-title {
+        width: 100%;
+        position: relative;
+        &::before {
+          content: none;
+          @media (min-width: $b-contact) {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            width: 35%;
+            height: 60%;
+            background-color: $mango-tango-transparent-55;
+            z-index: -1;
+          }
+        }
       }
     }
     &-figcaption {

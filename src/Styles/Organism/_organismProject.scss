@@ -1,0 +1,217 @@
+.o-accueil-realisation {
+  &-project {
+    width: 100%;
+    background: $platinum-transparent-75;
+    padding: 10px;
+    margin-bottom: 30px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 5px 9px 15.5px -1px rgba(0, 0, 0, 0.15);
+    transition: ease-in-out 0.2s;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    animation: slowFade 1s ease;
+    @media (min-width: $b-mobile) {
+      width: 85%;
+      margin: 25px auto;
+    }
+    @media (min-width: $b-desktop) {
+      width: 48%;
+    }
+    &:hover {
+      background-color: $platinum-transparent-85;
+      transition: ease-in-out 0.2s;
+    }
+
+    &-buttonEnd {
+      position: relative;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 50px auto;
+      font-weight: 600;
+      cursor: pointer;
+      z-index: 1;
+      transition: ease-in-out 0.3s;
+
+      & span {
+        display: flex;
+        margin: auto;
+        padding: 15px;
+        height: 65px;
+        width: 65px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $onyx-hover-transparent;
+        transition: ease-in-out 0.3s;
+        box-shadow: 5px 9px 15.5px -1px rgba(0, 0, 0, 0.25);
+
+        & img {
+          height: 30px;
+          width: 30px;
+          transform: rotate(180deg);
+        }
+        &:hover {
+          background-color: $background-interior-input-transparent-75;
+          transform: scale(1.08);
+        }
+      }
+
+      &:hover {
+        color: white;
+      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   margin: auto;
+      //   left: 48%;
+      //   width: 50px;
+      //   height: 50px;
+      //   border-radius: 50%;
+      //   background-color: rgba(237, 125, 58, 0.85);
+      //   z-index: -1;
+      //   transition: ease-in-out 0.3s;
+      // }
+      // &:hover::before {
+      //   background-color: $spanish-viridian-hover;
+      //   transition: ease-in-out 0.3s;
+      //   transform: scale(1.08);
+      // }
+    }
+    &-description {
+      display: flex;
+      flex-wrap: wrap;
+      & p {
+        max-width: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        text-align: center;
+        @media (min-width: $b-mobile) {
+          text-align: left;
+        }
+      }
+    }
+    &-title {
+      margin-bottom: 25px;
+      font-size: 1.3em;
+      text-align: center;
+      font-weight: 600;
+    }
+    &-techno {
+      &-list {
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 15px;
+      }
+      &-item {
+        display: flex;
+        max-width: 100%;
+        background-color: $background-interior-input-transparent-75;
+        margin: 5px 5px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+    }
+    &-figure {
+      width: 100%;
+      margin-bottom: 15px;
+      display: flex;
+      flex-grow: 1;
+    }
+    &-img {
+      max-width: 85%;
+      margin: auto;
+      display: block;
+      border-radius: 5px;
+    }
+    &-button {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0 0;
+      flex-wrap: wrap;
+      &-project {
+        text-decoration: none;
+        color: $onyx;
+        font-weight: 500;
+        background-color: $background-interior-input-transparent-75;
+        box-shadow: 5px 9px 15.5px -1px rgba(0, 0, 0, 0.15);
+        padding: 6px 15px;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: ease-in-out 0.3s;
+        margin-bottom: 20px;
+        text-align: center;
+        & p {
+          margin: 0;
+        }
+        @media (min-width: $b-mobile) {
+        }
+        &:hover {
+          transform: scale(1.08);
+          transition: ease-in-out 0.3s;
+          background-color: $rose-pale-transparent;
+        }
+      }
+      &-github {
+        text-decoration: none;
+        color: $onyx;
+        font-weight: 500;
+        display: flex;
+        padding: 5px 10px;
+        align-items: center;
+        height: fit-content;
+        border-radius: 10px;
+        transition: ease-in-out 0.2s;
+        justify-content: center;
+        border: 2px solid $mango-tango-transparent-55;
+        @media (min-width: $b-mobile) {
+        }
+        &:hover {
+          transform: scale(1.05);
+          transition: ease-in-out 0.2s;
+          background: $mango-tango-transparent-55;
+        }
+        & p {
+          margin: 0;
+        }
+        & span {
+          margin-left: 5px;
+          animation: arrowMove 3s ease-in-out infinite;
+          & img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes slowFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -42,7 +42,7 @@ const OrganismContact = () => {
   };
 
   return (
-    <section className="o-contact">
+    <section className="o-contact max-width-1600px">
       <h2 className="o-contact-title a-title-h2">Me Contacter</h2>
       <div className="o-contact-zone">
         <section className="o-contact-content">
@@ -104,7 +104,9 @@ const OrganismContact = () => {
             <ul className="o-contact-medialink-list">
             {ProjectsData.reseaux.map((reseau, index) => (
             <li className={`o-contact-medialink-item `+ reseau.name}>
-            <a key={index} href="#">
+            <a
+            target="_blank" rel="noopener noreferrer"
+            key={index} href={reseau.url}>
               <p>{reseau.name}</p>
             <span className="o-contact-medialink-item-icons">
             <img draggable='false' src={allIcons[reseau.name]} alt="" />

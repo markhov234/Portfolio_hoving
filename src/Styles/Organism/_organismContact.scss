@@ -1,22 +1,29 @@
 .o-contact {
   width: 100%;
-  padding: 30px 40px;
+  padding: 30px 10px;
+  @media (min-width: $b-contact) {
+    padding: 30px 10px;
+  }
   &-content {
     width: 100%;
-    margin: 0 15px 55px;
+    margin: 0 0 55px;
     @media (min-width: $b-contact) {
       width: 450px;
-      // width: auto;
+      margin: 0 15px 55px;
     }
   }
   &-title {
     &.a-title-h2 {
+      width: 95%;
       font-weight: 600;
       text-align: center;
       border: none;
+      z-index: 1;
       position: relative;
       margin-bottom: 45px;
       text-decoration: underline 8px $rose-pale-transparent;
+      margin: 0 auto 45px;
+      background-color: $background-interior-input-transparent-75;
       @media (min-width: $b-contact) {
         padding-bottom: 0;
         text-align: left;
@@ -58,6 +65,8 @@
       font-size: 1.3em;
       text-align: center;
       font-weight: 600;
+      position: relative;
+      z-index: 1;
       background-color: $background-interior-input-transparent-75;
     }
     &-input {

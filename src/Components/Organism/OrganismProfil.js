@@ -4,7 +4,7 @@ import allIcons from "../ReactHook/importIconsImg";
 const OrganismProfil = () => {
   const listTechno = ProjectsData.profil[0];
 
-  return (        <div className="o-accueil-presentation">
+  return (        <div className="o-accueil-presentation max-width-1600px">
   <h2 className="o-accueil-presentation-title">
     À propos de moi
   </h2>
@@ -38,7 +38,7 @@ const OrganismProfil = () => {
 <p>J'apprécie également les défis et je suis capable de travailler de manière autonome pour atteindre mes objectifs.
 Si vous êtes à la recherche d'une personne passionnée et dévouée, n'hésitez pas à me contacter. Je serais ravi de discuter de mes compétences et de voir comment je pourrais contribuer à votre entreprise.</p>
     </div>
-<div className="o-accueil-presentation-button"><a href="#">En savoir plus sur moi !</a></div>
+<div className="o-accueil-presentation-button"><a href="https://github.com/markhov234">En savoir plus sur moi !</a></div>
 
   </div>
 </div>);
