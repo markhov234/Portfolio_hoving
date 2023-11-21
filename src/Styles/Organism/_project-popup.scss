@@ -1,0 +1,43 @@
+.o-accueil-project-popup {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  left: -5000px;
+  transition: ease-in-out 0.3sec;
+  &.visible {
+    animation: moveIn 1s ease-in-out forwards;
+  }
+  &.exit {
+    animation: moveOut 1s ease-in-out forwards;
+  }
+
+  &-center {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 1250px;
+    background-color: rgba(54, 57, 59, 0.55);
+    border-radius: 15px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    left: -5000;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes moveOut {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -5000px;
+  }
+}

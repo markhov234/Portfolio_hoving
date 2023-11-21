@@ -3,7 +3,7 @@ import TriangleBackground from "../Molecule/TriangleBackground";
 import backgroundTriangle from "./../ReactHook/BackgroundTriangle";
 
 const AccueilBackInteractive = () => {
-  const [arrayTriangle] = useState(backgroundTriangle(90));
+  const [arrayTriangle] = useState(backgroundTriangle(100));
 
   const handleScroll = useCallback(() => {
     // handle scroll logic if needed

@@ -16,6 +16,17 @@ body {
   margin: 40px;
   width: 100%;
 }
+.carousel-control-prev {
+  left: -25px;
+}
+.carousel-control-next {
+  right: -25px;
+}
+.--center.carousel.slide.carousel-dark {
+  max-width: 750px;
+  height: 420px;
+  overflow: hidden;
+}
 $b-mobile: 640px;
 $b-contact: 780px;
 $b-desktop: 1024px;

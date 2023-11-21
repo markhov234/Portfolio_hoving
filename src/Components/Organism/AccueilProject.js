@@ -1,72 +1,50 @@
-import WaveSvgDesktop from "../../Images/wave_svg_desktop.svg";
-import WaveSvgWide from "../../Images/wave_svg_wide.svg";
-import WaveSvgMobile from "../../Images/wave_svg_mobile.svg";
 import ProjectsData from "./../../BackEnd/data.json";
-import { useParams } from "react-router-dom";
-import allIcons from "../ReactHook/importIconsImg";
+import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import allIcons from "../ReactHook/importIconsImg";
+import UpwardArrow from "../../Images/upward-arrow.png";
 
 const AccueilProject = (props) => {
-  // LE USEPARAMS PERMETS DE RÉCUPÉRER L'ID ENVOYER DANS LE LIEN DE L'URL
-  const { id } = useParams();
+  const [visiblePopup, setVisiblePopup] = useState(false);
+  const [currentProject, setCurrentProject] = useState(null);
+  const [timeVisiblePopup, setTimeVisiblePopup] = useState(false);
 
-  // J'UTILISE DONC LE ID POUR RÉCUPERER LE PROJET A PARTIR DU JSON LOCAUX
-  const currentProject = ProjectsData.projets[id - 1];
-  console.log(currentProject.technologie);
-  // console.log(ProjectsData.projets[id].id);
-  // #TODO: Faire UNE FUNCTION ''BACKEND'' pour trouver le bon id. Faire une boucle qui rentre dans tous les projets et regarde si l'id est égal a l'id envoyer dans le url
+  const loadPopUp = (idProject) => {
+    setVisiblePopup(true);
+    setCurrentProject(ProjectsData.projets[idProject - 1]);
+    setTimeVisiblePopup(false)
+  };
+
+  const closePopUp = () => {
+    setTimeVisiblePopup(true)
+    // Add a delay to allow the exit animation to play before removing the "visible" class
+    setTimeout(() => {
+      setVisiblePopup(false);
+      setCurrentProject(null);
+    }, 1000); // Adjust the timeout based on your exit animation duration
+  };
 
   return (
     <main className="o-accueil-project">
-      <h1 className="o-accueil-project--title">{currentProject.name}</h1>
-      <section className="o-accueil-project--article-zone">
-        <div className="o-accueil-project--article --center">
-          <img
-            className="o-accueil-project--article-image"
-            src={currentProject.image}
-            alt=""
-          />
-          <h2 className="o-accueil-project--article-title-h2">Mes tâches</h2>
-          <p className="o-accueil-project--article-description">
-            {currentProject.description}
+      <h1>ALLO</h1>
+      <button onClick={closePopUp}></button>
+      {visiblePopup && currentProject ? (
+    <div className={`o-accueil-project-popup ${timeVisiblePopup ? "exit" : "visible"}`}>
+          <div className="o-accueil-project-popup-center">
+          <h3>{currentProject.name}</h3>
+          <ul className="o-accueil-presentation-technos-list">
+    {currentProject.technologie.map((technologie, index) => (
+      <li key={index} className="o-accueil-presentation-technos-item">
+        <span className="o-accueil-presentation-technos-icon">
+          <img draggable='false' src={allIcons[technologie]} alt="" />
+        </span>
+        <p>{technologie}</p>
+      </li>
+    ))}
+  </ul>
+          <p>
+          {currentProject.description}
           </p>
-        </div>
-      </section>
-      <section className="o-accueil-project-techno">
-        <figure className="o-accueil-project--techno-svg-top">
-          <picture>
-            <source media="(min-width:1800px)" srcSet={WaveSvgWide} />
-            <source media="(min-width:1024px)" srcSet={WaveSvgDesktop} />
-            <img srcSet={WaveSvgMobile} alt="" />
-          </picture>
-        </figure>
-
-        <h3 className="o-accueil-project--techno-title">
-          {" "}
-          Technologies utilisées
-        </h3>
-        <ul className="o-accueil-project--techno-list --center">
-          {currentProject.technologie.map((technologie, index) => (
-            <li key={index}>
-              <span>
-                <img src={allIcons[technologie]} alt="" />
-              </span>
-              <p className="o-accueil-project--techno-list-text">
-                {technologie}
-              </p>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section className="o-accueil-project--liked">
-        <figure className="o-accueil-project--article-svg-bottom">
-          <picture>
-            <source media="(min-width:1800px)" srcSet={WaveSvgWide} />
-            <source media="(min-width:1024px)" srcSet={WaveSvgDesktop} />
-            <img srcSet={WaveSvgMobile} alt="" />
-          </picture>
-        </figure>
-        <div className="o-accueil-project--liked-zone">
           <Carousel className="--center" variant="dark">
             {currentProject.image.desktop.map((image, index) => (
               <Carousel.Item key={index}>
@@ -78,8 +56,30 @@ const AccueilProject = (props) => {
               </Carousel.Item>
             ))}
           </Carousel>
+          <div className="o-accueil-realisation-project-button">
+
+<button
+  aria-label={currentProject.name}
+  className="o-accueil-realisation-project-button-project"
+  id={currentProject.id}
+>
+  <p>Consulter le projet</p>
+</button>
+<a
+  href="https://github.com/markhov234"
+  className="o-accueil-realisation-project-button-github"
+>
+  <p>Consulter le github</p>
+  <span>
+    <img alt="arrow-up" src={UpwardArrow}></img>
+  </span>
+</a>
+</div>
+          </div>
         </div>
-      </section>
+      ) : (""
+      )}
+      <button onClick={() => loadPopUp(1)}></button>
     </main>
   );
 };

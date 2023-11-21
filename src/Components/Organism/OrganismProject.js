@@ -7,11 +7,11 @@ import { useInView } from 'react-intersection-observer';
 
 const OrganismProject = () => {
   const [visibleProjects, setVisibleProjects] = useState(4);
-  const [visiblePopup,setVisiblePopup] = useState(false)
+
   const loadMoreProjects = ()=>{
     setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 4);
   }
-    // Use useInView outside the map callback
+
     const [ref, inView] = useInView({
       triggerOnce: true,
     });
@@ -58,6 +58,10 @@ const OrganismProject = () => {
         </div>
 
         <div className="o-accueil-realisation-project-button">
+
+          {/* <button
+          onClick={loadPopUp(project.id)}
+          ></button> */}
           <Link
             aria-label={project.name}
             className="o-accueil-realisation-project-button-project"
