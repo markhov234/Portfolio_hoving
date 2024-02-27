@@ -1,0 +1,196 @@
+.project_popup {
+  &-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    @media screen and (min-width: $b-large-1200) {
+      max-width: 1400px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.bento {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    &-section {
+      flex: 2;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    &-item {
+      flex: 1;
+      height: 70px;
+      border-radius: 15px;
+      background: rgba(248, 246, 247, 0.2);
+      box-shadow: $shadow-bento;
+    }
+  }
+  &-main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    &-project {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &-description {
+        position: relative;
+        flex: 3;
+        border-radius: 15px;
+        box-shadow: $shadow-bento;
+        overflow: hidden;
+        transition: ease 0.3s;
+        mix-blend-mode: multiply;
+
+        & p {
+          margin: 10px;
+          position: relative;
+          z-index: 1;
+          font-weight: 500;
+        }
+        & h2 {
+          margin: 10px;
+          position: relative;
+          z-index: 1;
+          font-weight: 700;
+        }
+        &:hover {
+          & .bento-hover-rotate {
+            background-size: 77%;
+          }
+        }
+      }
+      &-backimage {
+        background-image: url(../../Images/triangle_forest.png);
+        background-size: 75%;
+        background-position: center;
+        height: 120%;
+        position: absolute;
+        width: 150%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: ease 0.3s;
+      }
+      &-button {
+        flex: 0.7;
+        display: flex;
+        gap: 10px;
+        &-item {
+          flex: 1;
+          border-radius: 15px;
+          box-shadow: $shadow-bento;
+          &:hover {
+            background-color: $background-interior-input-transparent-75;
+          }
+        }
+      }
+      &-image {
+        flex: 2;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: $shadow-bento;
+
+        & img {
+          width: 100%;
+          position: relative;
+          height: auto;
+          border-radius: 15px;
+          object-fit: cover;
+        }
+      }
+    }
+    &-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 0.8;
+      &-items {
+        display: flex;
+        flex: 1;
+        background-color: cadetblue;
+        border-radius: 15px;
+        overflow: hidden; // Ensure images don't overflow their container
+
+        & img {
+          width: 120%;
+          position: relative;
+          border-radius: 15px;
+          object-fit: cover;
+          aspect-ratio: 16 / 9;
+        }
+        &:first-child {
+          flex: 0.7;
+          & img {
+          }
+        }
+      }
+    }
+    &-bottom {
+      display: flex;
+      background: rgba(237, 125, 58, 0.2);
+      height: 20%;
+      margin-top: 10px;
+      border-radius: 15px;
+      box-shadow: $shadow-bento;
+    }
+  }
+}
+
+.url-image-01 {
+}
+
+.bento {
+  &-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  &-item {
+    // background-color: $platinum-transparent-75;
+    box-shadow: $shadow-bento;
+    overflow: hidden;
+    transition: ease 0.2s;
+    position: relative;
+
+    &.hover2 {
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    &.hover1 {
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+    & img {
+      width: 120%;
+      height: 120%;
+      position: relative;
+      border-radius: 15px;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+    }
+    &-bg {
+      background-size: 75%;
+      background-position: center;
+      height: 120%;
+      position: absolute;
+      width: 150%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: ease 0.3s;
+    }
+  }
+}

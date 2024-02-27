@@ -5,6 +5,8 @@
       "name": "Site web folks",
       "description": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing. Pour cela, j'ai réorganiser les classes selon la méthodologie du Atomic design. Le tout étant principalement fait sur custom template dans wordpress.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
+      "knowledge": "Lors de ce projet j'ai aprris x and y things.",
+      "challenge": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
       "technologie": [
         "Wordpress",
         "Github",
