@@ -1,10 +1,11 @@
 import ProjectsData from "./../../BackEnd/data.json";
 import allIcons from "../ReactHook/importIconsImg";
-import { useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import UpwardArrow from "../../Images/upward-arrow.png";
 import { useInView } from "react-intersection-observer";
+import ProjectPopup from "./project_popup";
 
-const OrganismProject = () => {
+const OrganismProject = ({ onVisiblePopup }) => {
   const [visibleProjects, setVisibleProjects] = useState(4);
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
@@ -12,22 +13,41 @@ const OrganismProject = () => {
   const loadPopUp = (idProject) => {
     setVisiblePopup(true);
     setCurrentProject(ProjectsData.projets[idProject - 1]);
+    // consoleLog(idProject);
   };
+
+  const onMessageSetVisiblePopup = (value) => {
+    setVisiblePopup(value);
+  };
+
   const loadMoreProjects = () => {
     setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 4);
   };
-  const consoleLog = (idProject) => {
-    console.log(idProject);
-  };
+  // const consoleLog = (idProject) => {
+  //   console.log(visiblePopup);
+  // };
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const funcOnVisiblePopup = useCallback(
+    (value) => {
+      onVisiblePopup(value);
+      console.log("visiblePopup", value);
+    },
+    [onVisiblePopup]
+  );
+
+  useEffect(() => {
+    funcOnVisiblePopup(visiblePopup);
+  }, [visibleProjects, funcOnVisiblePopup, visiblePopup]);
   return (
     <section className="o-accueil-realisation-zone max-width-1600px" ref={ref}>
       {visiblePopup && (
-        <div className="o-accueil-realisation-popup">
-          {currentProject && <p>{currentProject.name}</p>}
-        </div>
+        <ProjectPopup
+          id={currentProject.id}
+          onBackButtonPress={onMessageSetVisiblePopup}
+          // closePopup={setVisiblePopup}
+        />
       )}
       <h2 className="o-accueil-realisation-zone-title">Mes projets</h2>
 

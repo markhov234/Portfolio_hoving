@@ -1,4 +1,3 @@
-import Header from "./Header.js";
 import AccueilNews from "./AccueilNews";
 import React from "react";
 import ScrollToTop from "../ReactHook/ScrollToTop";
@@ -10,7 +9,6 @@ const Accueil = (props) => {
   return (
     <Router>
       <div className="p-accueil">
-    
         <div className="p-accueil-content">
           <ScrollToTop />
           <Routes>

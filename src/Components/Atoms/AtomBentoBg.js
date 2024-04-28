@@ -35,8 +35,14 @@ const AtomBentoBg = ({
     <div className={`bento-item ${hoverType && hoverType}`} style={style}>
       {imgUrl && <HoverableImage src={imgUrl} alt="Image" />}
       {title && <h2>{title}</h2>}
-      {text && <p>{text}</p>}
-      <div style={styleBg} className="bento-item-bg"></div>
+      {text && (
+        <p>
+          {text}
+          {bgImgUrl}
+        </p>
+      )}
+
+      {bgImgUrl && <div style={styleBg} className="bento-item-bg"></div>}
     </div>
   );
 };

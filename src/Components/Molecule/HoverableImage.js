@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const HoverableImage = ({ src, alt }) => {
+const HoverableImage = ({ src, alt, mainImage }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [top, setTop] = useState(0);
 
@@ -32,6 +32,7 @@ const HoverableImage = ({ src, alt }) => {
       onMouseMove={handleMouseMove}
       src={src}
       alt={alt}
+      className={`${mainImage ? "mainImg" : "image"}`}
       style={{
         transition: "0.3s ease",
         top: isHovered ? `-${top}px` : "0",
