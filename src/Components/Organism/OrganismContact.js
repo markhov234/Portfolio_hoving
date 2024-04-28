@@ -99,23 +99,22 @@ const OrganismContact = () => {
           </form>
         </section>
         <section className="o-contact-medialink">
-          <div>
-            <h3 className="o-contact-medialink-title">Réseaux sociaux</h3>
-            <ul className="o-contact-medialink-list">
-            {ProjectsData.reseaux.map((reseau, index) => (
-            <li className={`o-contact-medialink-item `+ reseau.name}>
-            <a
-            target="_blank" rel="noopener noreferrer"
-            key={index} href={reseau.url}>
-              <p>{reseau.name}</p>
-            <span className="o-contact-medialink-item-icons">
+        <div>
+  <h3 className="o-contact-medialink-title">Social Networks</h3>
+  <ul className="o-contact-medialink-list">
+    {ProjectsData.reseaux.map((reseau) => (
+      <li className={`o-contact-medialink-item ${reseau.name}`} key={reseau.name}>
+        <a target="_blank" rel="noopener noreferrer" href={reseau.url}>
+          <p>{reseau.name}</p>
+          <span className="o-contact-medialink-item-icons">
             <img draggable='false' src={allIcons[reseau.name]} alt="" />
-            </span>
-            </a>
-            </li>
-            ))}
-            </ul>
-          </div>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
         </section>
       </div>
     </section>

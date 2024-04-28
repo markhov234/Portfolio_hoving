@@ -101,6 +101,11 @@
       width: 100%;
       border-radius: 50%;
       box-shadow: 5px 9px 15.5px -1px rgba(0, 0, 0, 0.15);
+      transition: 0.25s ease-in;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     &-button {
       margin: 25px auto 0;
@@ -164,11 +169,13 @@
         }
       }
       &-item {
+        height: fit-content;
         padding: 2px 5px;
         border-radius: 20px;
         background-color: $background-input;
         margin: 5px 10px;
         display: flex;
+        align-items: center;
         box-shadow: 4px 7px 11.9px -6px rgba(0, 0, 0, 0.15);
         transition: ease-in-out 0.2s;
         user-select: none;

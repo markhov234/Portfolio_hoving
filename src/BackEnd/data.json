@@ -5,13 +5,16 @@
       "name": "Site web folks",
       "description": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing. Pour cela, j'ai réorganiser les classes selon la méthodologie du Atomic design. Le tout étant principalement fait sur custom template dans wordpress.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
+      "connaisance": "Au cours de cette expérience, j'ai acquis de précieuses compétences en structurant le SCSS/CSS et en appliquant la méthodologie de l'Atomic Design. J'ai approfondi ma compréhension des principes de conception et d'organisation des styles, ainsi que de l'importance de la modularité et de la cohérence dans la création d'interfaces utilisateur efficaces. En intégrant de nouveaux éléments pour l'équipe marketing, j'ai développé mes compétences en communication et en collaboration. Travailler sur des templates WordPress m'a offert une expérience pratique dans la création de solutions sur mesure. En résumé, cette expérience m'a permis de progresser en tant que développeur tout en développant des compétences en gestion de projet et en résolution de problèmes.",
+      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
       "technologie": [
         "Wordpress",
         "Github",
         "Php",
         "Sass",
         "Css",
-        "Atomic","Figma"
+        "Atomic",
+        "Figma"
       ],
       "url": "https://folksrh.com/",
       "image": {
@@ -31,7 +34,9 @@
       "name": "Site web de la TIM",
       "description": "Lors de notre épreuve finale de la technique, il était question de faire un site promettant le programme ainsi que ses finissants. Réaliser de zéro en utilisant un custom template de wordpress. Site web qui a été réalisé et designé par moi-même. Ce projet m'a permis d'approfondir mes connaissances sur l'UX/UI ainsi qu'un design qui doit correspondre à la clientèle majeure du site web.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "technologie": ["Wordpress", "Php", "Sass", "Css","Figma"],
+      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
+      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "technologie": ["Wordpress", "Php", "Sass", "Css", "Figma"],
       "url": "",
       "image": {
         "desktop": [
@@ -48,7 +53,9 @@
       "name": "Brulerie TIM",
       "description": "Lors de ma technique, j'avais comme mandant de réaliser un site web fictif concernant une brulerie de café. Design et intégration réalisé par moi, il était question d'intégrer différents contenus qui peuvent survenir dans le marché du travail, par exemple : un login, une vitrine de café, etc. J'ai appris sur le design pixel perfect et de reproduire celui-ci à l'aide du scss.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "technologie": ["Php", "Sass", "Css", "Atomic","Figma"],
+      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
+      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "technologie": ["Php", "Sass", "Css", "Atomic", "Figma"],
       "url": "https://folksrh.com/",
       "image": {
         "desktop": [
@@ -66,6 +73,8 @@
       "name": "Pastèque",
       "description": "Création d'un site web ayant comme thème une vitrine de livre. Faits en équipe de quatre personnes, nous avions comme mandat de réaliser les maquettes et par la suite les reproduires en utilisant Laravel. Ce site web fut le premier projet avec beaucoup de back-end dont j'étais le responsable. Création du compte, connexion au compte, ajoutée des livres au panier, envoie d'un reçu à l'adresse enregistrée. Il fut question de développer un CRUD et une database pour tous ses livres.  ",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
+      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
+      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
       "technologie": ["Php", "Sass", "Css", "Laravel"],
       "url": "https://folksrh.com/",
       "image": {
@@ -86,7 +95,9 @@
       "name": "Pagaie Québec",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "technologie": ["Laravel", "Php", "Sass", "Css","Figma"],
+      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
+      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "technologie": ["Laravel", "Php", "Sass", "Css", "Figma"],
       "url": "https://folksrh.com/",
       "mainImage": "/images/pasteque/pasteque_couverture.jpg",
       "image": {
@@ -170,7 +181,8 @@
         {
           "techno": "MySql",
           "level": 6
-        },   {
+        },
+        {
           "techno": "Tailwind",
           "level": 6
         }
@@ -186,35 +198,34 @@
   ],
   "reseaux": [
     {
-      "name":"Youtube",
-      "url":"https://www.youtube.com/channel/UCv5RkJS4JeWlpIR7YqRvifQ",
-      "color":"rgba(255, 0, 0, 0.75)"
+      "name": "Youtube",
+      "url": "https://www.youtube.com/channel/UCv5RkJS4JeWlpIR7YqRvifQ",
+      "color": "rgba(255, 0, 0, 0.75)"
     },
     {
-      "name":"Gmail",
-      "url":"https://folksrh.com/",
-      "color":"rgba(255, 0, 0, 0.75)"
+      "name": "Gmail",
+      "url": "https://folksrh.com/",
+      "color": "rgba(255, 0, 0, 0.75)"
     },
     {
-      "name":"LinkedIn",
-      "url":"https://www.linkedin.com/in/marc-antoine-hovington-043007206/",
-      "color":"rgba(0, 114, 177, 0.75)"
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/marc-antoine-hovington-043007206/",
+      "color": "rgba(0, 114, 177, 0.75)"
     },
     {
-      "name":"Facebook",
-      "url":"https://www.facebook.com/marcantoine.hovington.92",
-      "color":"rgba(24, 119, 242, 0.75)"
+      "name": "Facebook",
+      "url": "https://www.facebook.com/marcantoine.hovington.92",
+      "color": "rgba(24, 119, 242, 0.75)"
     },
     {
-      "name":"Instagram",
-      "url":"https://www.instagram.com/hovinton/",
-      "color":"linear-gradient(180deg, rgba(104, 80, 255, 1) 0%, rgba(236, 83, 104, 1) 45.83%, rgba(255, 209, 47, 1) 100%) transparent 0.75"
+      "name": "Instagram",
+      "url": "https://www.instagram.com/hovinton/",
+      "color": "linear-gradient(180deg, rgba(104, 80, 255, 1) 0%, rgba(236, 83, 104, 1) 45.83%, rgba(255, 209, 47, 1) 100%) transparent 0.75"
     },
     {
-      "name":"Github",
-      "url":"https://github.com/markhov234",
-      "color":"rgba(36, 41, 46, 0.75)"
+      "name": "Github",
+      "url": "https://github.com/markhov234",
+      "color": "rgba(36, 41, 46, 0.75)"
     }
   ]
-
 }

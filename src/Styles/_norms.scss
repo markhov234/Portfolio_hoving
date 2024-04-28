@@ -1,3 +1,31 @@
+// .bento-hover-rotate {
+//   // cursor: pointer;
+//   &:hover {
+//     animation: rotateSlow ease 5s infinite;
+//   }
+// }
+// /* Define the keyframes */
+// @keyframes rotateSlow {
+//   0% {
+//     transform: rotate(-0.2deg);
+//   }
+//   5% {
+//     transform: rotate(-0.2deg);
+//   }
+//   50% {
+//     transform: rotate(0.2deg);
+//   }
+//   100% {
+//     transform: rotate(-0.2deg);
+//   }
+// }
+.bento-hover-scale {
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
 .--center {
   padding: 0 4vw;
   max-width: 1860px;
@@ -30,6 +58,7 @@ body {
 $b-mobile: 640px;
 $b-contact: 780px;
 $b-desktop: 1024px;
+$b-large-1200: 1200px;
 $b-large-desktop: 1800px;
 $paddingTop-menu: 6vw;
 
@@ -57,13 +86,13 @@ $mango-tango: #ed7d3a;
 $mango-tango-transparent-55: rgb(237, 125, 58, 0.85);
 $rose-pale: #ef476f;
 $rose-pale-transparent: rgba(239, 71, 111, 0.75);
+$rose-pale-transparent-35: rgba(239, 71, 111, 0.35);
 
 $border-input: #b2b2b2;
 $background-input: #f5f1f3;
 $background-interior-input: #fdfdfd;
-$background-interior-input-transparent-75: rgb(
-  253,
-  253,
-  253,
-  0.75
-);
+$background-interior-input-transparent-75: rgb(253, 253, 253, 0.75);
+$background-interior-input-transparent-35: rgb(253, 253, 253, 0.45);
+
+$shadow-bento: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+  rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
