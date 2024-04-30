@@ -61,9 +61,9 @@
       "id": 3,
       "name": "Site web de la TIM",
       "description": "Lors de notre épreuve finale de la technique, il était question de faire un site promettant le programme ainsi que ses finissants. Réaliser de zéro en utilisant un custom template de wordpress. Site web qui a été réalisé et designé par moi-même. Ce projet m'a permis d'approfondir mes connaissances sur l'UX/UI ainsi qu'un design qui doit correspondre à la clientèle majeure du site web.",
-      "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
-      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "descriptionShort": "Lors de ma technique, l'épreuve finale correspondait à la réalisation d'un site web pour la TIM. Design et intégration réalisé par moi-même.",
+      "connaisance": "Lors de ce projet, j'ai appris à utiliser WordPress et ses fonctionnalités. J'ai notamment découvert comment utiliser Advanced Custom Fields pour saisir les données de tous les étudiants de la TIM.",
+      "acquis": "J'ai acquis la majorité de mes compétences avec wordpress lors de ce projet puisqu'il combinait plusieurs aspects vue lors de la technique. Mise en ligne, création des maquettes, utilisation d'axure, utilisation de figma, faire un estimé de budget ainsi que de temps pour le développement du site web.",
       "technologie": ["Wordpress", "Php", "Sass", "Css", "Figma"],
       "url": "",
       "image": {

@@ -1,5 +1,6 @@
 import React from "react";
 import HoverableImage from "../Molecule/HoverableImage";
+import { useState } from "react";
 
 const AtomBento = ({
   flexSize,
@@ -7,6 +8,7 @@ const AtomBento = ({
   height,
   // alignItems,
   bgColor,
+  textHolder,
   bgImgUrl,
   imgUrl,
   text,
@@ -23,6 +25,7 @@ const AtomBento = ({
   isBackButtonPresent,
   onBackButtonPress, // Envoie le bouton retour pressé
 }) => {
+  const [isTextDescriptionActive, setIsTextDescriptionActive] = useState(null);
   // Cette fonction est appelée quand on clique sur le composant et que textButton est true;
   const handleClick = () => {
     if (textButton) {
@@ -30,9 +33,14 @@ const AtomBento = ({
       onClick(); // Appeler la fonction onClick du composant parent
     }
   };
+  const handleTextDescription = () => {
+    if (textHolder && imgUrl) {
+      setIsTextDescriptionActive((prevState) => !prevState);
+    }
+  };
 
   const handleImagePress = () => {
-    if (onImagePress && imgUrl) {
+    if (onImagePress && imgUrl && button) {
       onImagePress(imgUrl); // Envoyer l'URL de l'image au composant parent
       onClick();
     }
@@ -69,15 +77,18 @@ const AtomBento = ({
       onClick={(e) => {
         handleClick(); // Appeler la fonction handleClick
         handleImagePress(); // Appeler la fonction handleImagePress
+        handleTextDescription();
       }}
       className={`bento-item ${hoverType ? hoverType : ""} ${
         button ? "button" : ""
-      } ${active ? "active" : ""} `}
+      } ${active ? "active" : ""}  ${
+        isTextDescriptionActive ? "textDescriptionShow" : ""
+      } `}
       style={style}
     >
       {isBackButtonPresent && (
         <button className="back-button" onClick={handleBackButtonPress}>
-          Back
+          Retour
         </button>
       )}
 
@@ -88,6 +99,12 @@ const AtomBento = ({
       {text && (
         <p className={`text ${mainImage ? "mainImgText" : ""}`}>{text}</p>
       )}
+
+      {textHolder && !imgUrl ? (
+        // Render textHolder only if textHolder is true and imgUrl is null
+        <p className={`text ${textHolder ? "textHolder" : ""}`}>{textHolder}</p>
+      ) : null}
+
       {textButton && <p>{textButton}</p>}
       {bgImgUrl && <div style={styleBg} className="bento-item-bg"></div>}
       {children}
