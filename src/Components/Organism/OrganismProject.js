@@ -92,7 +92,11 @@ const OrganismProject = ({ onVisiblePopup }) => {
               Consulter le projet
             </div>
             <a
-              href="https://github.com/markhov234"
+              href={`${
+                project.url_github
+                  ? project.url_github
+                  : "https://github.com/markhov234"
+              }`}
               className="o-accueil-realisation-project-button-github"
             >
               <p>Consulter le github</p>

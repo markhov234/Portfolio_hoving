@@ -2,6 +2,34 @@
   "projets": [
     {
       "id": 1,
+      "name": "Site Web Kiboikoi",
+      "description": "Le café Kiboikoi est un café dans la région des Escoumins. Celui-ci est construit dans l'ancienne maison des mes grand-parents, alors c'est un lieu pour moi qui est très important et fait partie de ma personne. J'ai donc décidé de me pratiquer en effectuant un redesign du site web de Kiboikoi. Celui-ci n'est qu'une copie est en aucun cas le véritable site web.",
+      "descriptionShort": "Redesign d'un site web café bar dans le but de me pratiquer avec wordpress et la mise en ligne d'un site web.",
+      "connaisance": "Lors de ce site web j'ai appris plusieurs choses. J'ai appris à utiliser un custom template de wordpress, à réorganiser le scss/css pour qu'il soit plus facile à comprendre pour les autres développeurs et à travailler avec un custom template de wordpress. J'ai également approfondi mes compétences en design et en organisation des styles, en gestion de projet et en résolution de problèmes. J'ai également acquis de l'expérience pratique dans la création de solutions sur mesure. En résumé, cette expérience m'a permis de progresser en tant que développeur tout en développant des compétences en gestion de projet et en résolution de problèmes.",
+      "acquis": "J'ai acquis plus de compétences lors de ce projet. J'ai appris la mise en ligne et les commandes SSH, les noms de domaine et l'hébergement. J'ai également appris à travailler avec des thèmes personnalisés de WordPress, ainsi qu'à créer mes propres plugins pour mon site web. J'ai appris à planifier mes projets et à réaliser une étude d'autres sites web pour comprendre quelle interface utilisateur et expérience utilisateur seraient optimales pour ce site web. Dans le futur, le site web sera équipé d'une boutique WooCommerce pour la vente de café en ligne et de produits dérivés.",
+      "technologie": [
+        "Wordpress",
+        "Github",
+        "Php",
+        "Sass",
+        "Css",
+        "Atomic",
+        "Figma"
+      ],
+      "url": "https://www.kiboikoihoving.xyz/",
+      "url_github": "https://github.com/markhov234/kiboikoi",
+      "image": {
+        "desktop": [
+          "/images/kiboikoi/kiboikoi_1.jpg",
+          "/images/kiboikoi/kiboikoi_2.jpg",
+          "/images/kiboikoi/kiboikoi_3.jpg",
+          "/images/kiboikoi/kiboikoi_4.jpg"
+        ],
+        "couverture": "/images/kiboikoi/kiboikoi_3.jpg"
+      }
+    },
+    {
+      "id": 2,
       "name": "Site web folks",
       "description": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing. Pour cela, j'ai réorganiser les classes selon la méthodologie du Atomic design. Le tout étant principalement fait sur custom template dans wordpress.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
@@ -30,7 +58,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Site web de la TIM",
       "description": "Lors de notre épreuve finale de la technique, il était question de faire un site promettant le programme ainsi que ses finissants. Réaliser de zéro en utilisant un custom template de wordpress. Site web qui a été réalisé et designé par moi-même. Ce projet m'a permis d'approfondir mes connaissances sur l'UX/UI ainsi qu'un design qui doit correspondre à la clientèle majeure du site web.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
@@ -49,7 +77,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Brulerie TIM",
       "description": "Lors de ma technique, j'avais comme mandant de réaliser un site web fictif concernant une brulerie de café. Design et intégration réalisé par moi, il était question d'intégrer différents contenus qui peuvent survenir dans le marché du travail, par exemple : un login, une vitrine de café, etc. J'ai appris sur le design pixel perfect et de reproduire celui-ci à l'aide du scss.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
@@ -69,7 +97,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Pastèque",
       "description": "Création d'un site web ayant comme thème une vitrine de livre. Faits en équipe de quatre personnes, nous avions comme mandat de réaliser les maquettes et par la suite les reproduires en utilisant Laravel. Ce site web fut le premier projet avec beaucoup de back-end dont j'étais le responsable. Création du compte, connexion au compte, ajoutée des livres au panier, envoie d'un reçu à l'adresse enregistrée. Il fut question de développer un CRUD et une database pour tous ses livres.  ",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
@@ -91,7 +119,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Pagaie Québec",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
@@ -204,7 +232,7 @@
     },
     {
       "name": "Gmail",
-      "url": "https://folksrh.com/",
+      "url": "mailto:hovington234@gmail.com",
       "color": "rgba(255, 0, 0, 0.75)"
     },
     {
