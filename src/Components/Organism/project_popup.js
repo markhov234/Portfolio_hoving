@@ -138,7 +138,7 @@ const ProjectPopup = ({ id, onBackButtonPress }) => {
             alignItems={"center"}
             bentoData={bentoDataProjectButton}
           ></MoleculeBentoSection>
-          <AtomBento flexSize={1} borderRadius={"15px"}>
+          <AtomBento flexSize={1.25} borderRadius={"15px"}>
             <h2>Technologie utilisées</h2>
             <ul className="o-accueil-presentation-technos-list">
               {listTechnoArr.technologie.map((technologie, index) => (
