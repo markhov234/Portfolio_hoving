@@ -69,7 +69,12 @@ const ProjectPopup = ({ id, onBackButtonPress }) => {
       title: listTechnoArr ? listTechnoArr.name : "", // Dynamically include the project title
       text: currentDescription ? currentDescription : "", // Dynamically include the project description
       borderRadius: "15px",
-      bgImgUrl: `"/images/${currentDescriptionImage}.png"`,
+      imgUrl: selectedImageUrl,
+      mainImage: true,
+      textHolder: "Appuyé sur l'une des images à droite pour l'agrandir.",
+      hoverType: "hover3",
+
+      // bgImgUrl: `"/images/${currentDescriptionImage}.png"`,
     },
   ];
   const bentoDataProjectButton = [
@@ -133,13 +138,19 @@ const ProjectPopup = ({ id, onBackButtonPress }) => {
             alignItems={"center"}
             bentoData={bentoDataProjectButton}
           ></MoleculeBentoSection>
-          <AtomBento
-            flexSize={2}
-            borderRadius={"15px"}
-            text={"Appuyé sur l'une des images à droite pour l'agrandir."}
-            imgUrl={selectedImageUrl}
-            mainImage={true}
-          />
+          <AtomBento flexSize={1.25} borderRadius={"15px"}>
+            <h2>Technologie utilisées</h2>
+            <ul className="o-accueil-presentation-technos-list">
+              {listTechnoArr.technologie.map((technologie, index) => (
+                <li key={index} className="o-accueil-presentation-technos-item">
+                  <span className="o-accueil-presentation-technos-icon">
+                    <img draggable="false" src={allIcons[technologie]} alt="" />
+                  </span>
+                  <p>{technologie}</p>
+                </li>
+              ))}
+            </ul>
+          </AtomBento>
         </OrganismBentoSection>
         <MoleculeBentoSection
           flexDirection={"column"}
@@ -148,19 +159,6 @@ const ProjectPopup = ({ id, onBackButtonPress }) => {
           onImagePress={handleImageClick} // Passer la fonction de gestion des clics sur les images
         ></MoleculeBentoSection>
       </OrganismBentoSection>
-      {/* <AtomBento flexSize={1} borderRadius={"15px"}> */}
-      <h2>Technologie utilisées</h2>
-      <ul className="o-accueil-presentation-technos-list">
-        {listTechnoArr.technologie.map((technologie, index) => (
-          <li key={index} className="o-accueil-presentation-technos-item">
-            <span className="o-accueil-presentation-technos-icon">
-              <img draggable="false" src={allIcons[technologie]} alt="" />
-            </span>
-            <p>{technologie}</p>
-          </li>
-        ))}
-      </ul>
-      {/* </AtomBento> */}
     </section>
   );
 };

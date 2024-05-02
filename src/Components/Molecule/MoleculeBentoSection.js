@@ -44,6 +44,7 @@ const MoleculeBentoSection = ({
           onImagePress={handleMessageImagePress} // Passer la fonction de rappel pour les clics sur les images
           onBackButtonPress={handleBackButtonPress}
           key={index}
+          textHolder={bento.textHolder}
           flexSize={bento.flexSize}
           borderRadius={bento.borderRadius}
           height={bento.height}
