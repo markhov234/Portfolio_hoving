@@ -1,6 +1,6 @@
 const backgroundTriangle = (nbOfTriangle) => {
   const arrayTriangle = [];
-  const colors = ["#1C7C54", "#000807", "#8C5E58", "#EF476F"];
+  const colors = ["#ED7D3A", "#2CB57C", "#2e282a"];
 
   for (let int = 0; int < nbOfTriangle; int++) {
     const selectionCouleur = Math.floor(Math.random() * 4);
