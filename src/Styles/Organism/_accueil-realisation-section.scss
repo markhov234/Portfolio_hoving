@@ -1,0 +1,65 @@
+.realisation-section {
+  max-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(243, 247, 245, 0.9);
+  padding: 15px;
+  box-shadow: 4px 5px 19.5px 1px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  gap: 1rem;
+  margin: auto;
+  @media (min-width: $b-contact) {
+    max-width: 47%;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  &-header {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex: 2;
+    @media (min-width: $b-large-1200) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .img {
+      flex: 1;
+    }
+    .realisation-section-description {
+      flex: 1;
+
+      p {
+        font-size: 18px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; // adjust number of lines
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+  &-details {
+    flex: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    @media (min-width: $b-large-1200) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .realisation-section-techno {
+      flex: 1;
+    }
+    .realisation-section-function {
+      flex: 1;
+    }
+  }
+}

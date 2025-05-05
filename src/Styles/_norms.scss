@@ -1,24 +1,3 @@
-// .bento-hover-rotate {
-//   // cursor: pointer;
-//   &:hover {
-//     animation: rotateSlow ease 5s infinite;
-//   }
-// }
-// /* Define the keyframes */
-// @keyframes rotateSlow {
-//   0% {
-//     transform: rotate(-0.2deg);
-//   }
-//   5% {
-//     transform: rotate(-0.2deg);
-//   }
-//   50% {
-//     transform: rotate(0.2deg);
-//   }
-//   100% {
-//     transform: rotate(-0.2deg);
-//   }
-// }
 .bento-hover-scale {
   cursor: pointer;
   transition: 0.2s ease;
@@ -74,8 +53,8 @@ $platinum: #e9e3e6;
 $platinum-transparent-75: rgba(233, 227, 230, 0.75);
 $platinum-transparent-85: rgba(233, 227, 230, 0.95);
 $pale-silver: #c3baba;
-$spanish-viridian: #1c7c54;
-$spanish-viridian-hover: #2cb57c;
+$spanish-viridian: #2cb57c;
+$spanish-viridian-hover: #1c7c54;
 $spanish-viridian-hover-transparent-75: rgb(44, 181, 124, 0.75);
 $silver-chalice: #b2b2b2;
 $sonic-silver: #736f72;

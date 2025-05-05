@@ -7,6 +7,12 @@
       "descriptionShort": "Redesign d'un site web café bar dans le but de me pratiquer avec wordpress et la mise en ligne d'un site web.",
       "connaisance": "Lors de ce site web j'ai appris plusieurs choses. J'ai appris à utiliser un custom template de wordpress, à réorganiser le scss/css pour qu'il soit plus facile à comprendre pour les autres développeurs et à travailler avec un custom template de wordpress. J'ai également approfondi mes compétences en design et en organisation des styles, en gestion de projet et en résolution de problèmes. J'ai également acquis de l'expérience pratique dans la création de solutions sur mesure. En résumé, cette expérience m'a permis de progresser en tant que développeur tout en développant des compétences en gestion de projet et en résolution de problèmes.",
       "acquis": "J'ai acquis plus de compétences lors de ce projet. J'ai appris la mise en ligne et les commandes SSH, les noms de domaine et l'hébergement. J'ai également appris à travailler avec des thèmes personnalisés de WordPress, ainsi qu'à créer mes propres plugins pour mon site web. J'ai appris à planifier mes projets et à réaliser une étude d'autres sites web pour comprendre quelle interface utilisateur et expérience utilisateur seraient optimales pour ce site web. Dans le futur, le site web sera équipé d'une boutique WooCommerce pour la vente de café en ligne et de produits dérivés.",
+      
+      "function":[
+        "Hoster un serveur !",
+        "Explorer l'achat d'un nom de domaine",
+        "Refonte d'un site web existant"
+      ],
       "technologie": [
         "Wordpress",
         "Github",
@@ -35,6 +41,11 @@
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
       "connaisance": "Au cours de cette expérience, j'ai acquis de précieuses compétences en structurant le SCSS/CSS et en appliquant la méthodologie de l'Atomic Design. J'ai approfondi ma compréhension des principes de conception et d'organisation des styles, ainsi que de l'importance de la modularité et de la cohérence dans la création d'interfaces utilisateur efficaces. En intégrant de nouveaux éléments pour l'équipe marketing, j'ai développé mes compétences en communication et en collaboration. Travailler sur des templates WordPress m'a offert une expérience pratique dans la création de solutions sur mesure. En résumé, cette expérience m'a permis de progresser en tant que développeur tout en développant des compétences en gestion de projet et en résolution de problèmes.",
       "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "function":[
+        "Hoster un serveur !",
+        "Explorer l'achat d'un nom de domaine",
+        "Refonte d'un site web existant"
+      ],
       "technologie": [
         "Wordpress",
         "Github",
@@ -64,6 +75,11 @@
       "descriptionShort": "Lors de ma technique, l'épreuve finale correspondait à la réalisation d'un site web pour la TIM. Design et intégration réalisé par moi-même.",
       "connaisance": "Lors de ce projet, j'ai appris à utiliser WordPress et ses fonctionnalités. J'ai notamment découvert comment utiliser Advanced Custom Fields pour saisir les données de tous les étudiants de la TIM.",
       "acquis": "J'ai acquis la majorité de mes compétences avec wordpress lors de ce projet puisqu'il combinait plusieurs aspects vue lors de la technique. Mise en ligne, création des maquettes, utilisation d'axure, utilisation de figma, faire un estimé de budget ainsi que de temps pour le développement du site web.",
+      "function":[
+        "Hoster un serveur !",
+        "Explorer l'achat d'un nom de domaine",
+        "Refonte d'un site web existant"
+      ],
       "technologie": ["Wordpress", "Php", "Sass", "Css", "Figma"],
       "url": "",
       "image": {
@@ -83,6 +99,12 @@
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
       "connaisance": "Lors de ce projet j'ai aprris x and y things.",
       "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      
+        "function":[
+        "Hoster un serveur !",
+        "Explorer l'achat d'un nom de domaine",
+        "Refonte d'un site web existant"
+      ],
       "technologie": ["Php", "Sass", "Css", "Atomic", "Figma"],
       "url": "https://folksrh.com/",
       "image": {
@@ -103,6 +125,11 @@
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
       "connaisance": "Lors de ce projet j'ai aprris x and y things.",
       "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "function":[
+        "Hoster un serveur !",
+        "Explorer l'achat d'un nom de domaine",
+        "Refonte d'un site web existant"
+      ],
       "technologie": ["Php", "Sass", "Css", "Laravel"],
       "url": "https://folksrh.com/",
       "image": {
@@ -124,7 +151,11 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
       "connaisance": "Lors de ce projet j'ai aprris x and y things.",
-      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
+      "function":[
+        "Hoster un serveur !",
+        "Explorer l'achat d'un nom de domaine",
+        "Refonte d'un site web existant"
+      ],"acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
       "technologie": ["Laravel", "Php", "Sass", "Css", "Figma"],
       "url": "https://folksrh.com/",
       "mainImage": "/images/pasteque/pasteque_couverture.jpg",
