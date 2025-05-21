@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import allIcons from "../ReactHook/importIconsImg";
 
 const AccueilRealisationSection = ({ project }) => {
@@ -6,7 +7,7 @@ const AccueilRealisationSection = ({ project }) => {
   console.log("Je suis dans le Accueil Realisation Section", project);
 
   return (
-    <div class="realisation-section">
+    <div className="realisation-section">
       <div className="realisation-section-header">
         <div className="img">
           <img src={`${project.image.couverture}`} alt={project.name} />
@@ -14,12 +15,20 @@ const AccueilRealisationSection = ({ project }) => {
         <div className="realisation-section-description">
           <h3 className="realisation-title">{project.name}</h3>
           <p>{project.descriptionShort}</p>
+          <Link
+            className="realisation-section-button"
+            to={`/project/${project.id}`}
+          >
+            <span className="realisation-section-button-text">
+              Voir le projet !
+            </span>
+          </Link>
         </div>
       </div>
       <div className="realisation-section-details">
         <div className="realisation-section-techno">
           <p className="h4">Stacks Utilisées</p>
-          <ul className="o-accueil-realisation-project-techno-list">
+          <ul className="o-accueil-realisation-project-techno-list .realisation">
             {project.technologie.map((technologie, indexTechno) => (
               <li
                 className="o-accueil-presentation-technos-item"
@@ -41,9 +50,6 @@ const AccueilRealisationSection = ({ project }) => {
               </li>
             ))}
           </ul>
-          <div className="o-accueil-presentation-button">
-            <a href="https://github.com/markhov234">En savoir plus sur moi !</a>
-          </div>
         </div>
       </div>
     </div>

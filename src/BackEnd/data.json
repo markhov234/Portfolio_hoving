@@ -3,15 +3,14 @@
     {
       "id": 1,
       "name": "Site Web Kiboikoi",
-      "description": "Le café Kiboikoi est un café dans la région des Escoumins. Celui-ci est construit dans l'ancienne maison des mes grand-parents, alors c'est un lieu pour moi qui est très important et fait partie de ma personne. J'ai donc décidé de me pratiquer en effectuant un redesign du site web de Kiboikoi. Celui-ci n'est qu'une copie est en aucun cas le véritable site web.",
-      "descriptionShort": "Redesign d'un site web café bar dans le but de me pratiquer avec wordpress et la mise en ligne d'un site web.",
-      "connaisance": "Lors de ce site web j'ai appris plusieurs choses. J'ai appris à utiliser un custom template de wordpress, à réorganiser le scss/css pour qu'il soit plus facile à comprendre pour les autres développeurs et à travailler avec un custom template de wordpress. J'ai également approfondi mes compétences en design et en organisation des styles, en gestion de projet et en résolution de problèmes. J'ai également acquis de l'expérience pratique dans la création de solutions sur mesure. En résumé, cette expérience m'a permis de progresser en tant que développeur tout en développant des compétences en gestion de projet et en résolution de problèmes.",
-      "acquis": "J'ai acquis plus de compétences lors de ce projet. J'ai appris la mise en ligne et les commandes SSH, les noms de domaine et l'hébergement. J'ai également appris à travailler avec des thèmes personnalisés de WordPress, ainsi qu'à créer mes propres plugins pour mon site web. J'ai appris à planifier mes projets et à réaliser une étude d'autres sites web pour comprendre quelle interface utilisateur et expérience utilisateur seraient optimales pour ce site web. Dans le futur, le site web sera équipé d'une boutique WooCommerce pour la vente de café en ligne et de produits dérivés.",
-      
-      "function":[
-        "Hoster un serveur !",
-        "Explorer l'achat d'un nom de domaine",
-        "Refonte d'un site web existant"
+      "description": "Le café Kiboikoi est un établissement situé aux Escoumins. J'ai recréé le site pour m'exercer avec Wordpress, car le lieu a une valeur sentimentale. Ce projet m'a permis de simuler un redesign complet.",
+      "descriptionShort": "Redesign d’un café-bar pour m’exercer avec Wordpress, l’hébergement, et la mise en ligne.",
+      "connaisance": "Apprentissage des templates personnalisés Wordpress, structuration SCss pour d'autres développeurs, et amélioration de l'expérience utilisateur.",
+      "acquis": "Expérience en mise en ligne via SSH, nom de domaine, hébergement, création de plugins, et planification d’un futur ajout e-commerce avec WooCommerce.",
+      "function": [
+        "Héberger un serveur",
+        "Achat d’un nom de domaine",
+        "Refonte complète d’un site web"
       ],
       "technologie": [
         "Wordpress",
@@ -36,15 +35,15 @@
     },
     {
       "id": 2,
-      "name": "Site web folks",
-      "description": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing. Pour cela, j'ai réorganiser les classes selon la méthodologie du Atomic design. Le tout étant principalement fait sur custom template dans wordpress.",
-      "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "connaisance": "Au cours de cette expérience, j'ai acquis de précieuses compétences en structurant le SCSS/CSS et en appliquant la méthodologie de l'Atomic Design. J'ai approfondi ma compréhension des principes de conception et d'organisation des styles, ainsi que de l'importance de la modularité et de la cohérence dans la création d'interfaces utilisateur efficaces. En intégrant de nouveaux éléments pour l'équipe marketing, j'ai développé mes compétences en communication et en collaboration. Travailler sur des templates WordPress m'a offert une expérience pratique dans la création de solutions sur mesure. En résumé, cette expérience m'a permis de progresser en tant que développeur tout en développant des compétences en gestion de projet et en résolution de problèmes.",
-      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
-      "function":[
-        "Hoster un serveur !",
-        "Explorer l'achat d'un nom de domaine",
-        "Refonte d'un site web existant"
+      "name": "Site web Folks",
+      "description": "Dans le cadre de mon emploi, j’ai restructuré le SCss selon Atomic et intégré de nouvelles fonctionnalités à la demande de l’équipe marketing via un thème Wordpress personnalisé.",
+      "descriptionShort": "Refonte partielle en Atomic et ajout de modules pour l’équipe marketing.",
+      "connaisance": "Structuration SCss modulaire, application du design system, et collaboration interdisciplinaire.",
+      "acquis": "Réorganisation du code existant, intégration Wordpress avancée, communication en équipe.",
+      "function": [
+        "Mise à jour d’un site en production",
+        "Revue de code Css",
+        "Ajout de nouveaux modules"
       ],
       "technologie": [
         "Wordpress",
@@ -71,16 +70,22 @@
     {
       "id": 3,
       "name": "Site web de la TIM",
-      "description": "Lors de notre épreuve finale de la technique, il était question de faire un site promettant le programme ainsi que ses finissants. Réaliser de zéro en utilisant un custom template de wordpress. Site web qui a été réalisé et designé par moi-même. Ce projet m'a permis d'approfondir mes connaissances sur l'UX/UI ainsi qu'un design qui doit correspondre à la clientèle majeure du site web.",
-      "descriptionShort": "Lors de ma technique, l'épreuve finale correspondait à la réalisation d'un site web pour la TIM. Design et intégration réalisé par moi-même.",
-      "connaisance": "Lors de ce projet, j'ai appris à utiliser WordPress et ses fonctionnalités. J'ai notamment découvert comment utiliser Advanced Custom Fields pour saisir les données de tous les étudiants de la TIM.",
-      "acquis": "J'ai acquis la majorité de mes compétences avec wordpress lors de ce projet puisqu'il combinait plusieurs aspects vue lors de la technique. Mise en ligne, création des maquettes, utilisation d'axure, utilisation de figma, faire un estimé de budget ainsi que de temps pour le développement du site web.",
-      "function":[
-        "Hoster un serveur !",
-        "Explorer l'achat d'un nom de domaine",
-        "Refonte d'un site web existant"
+      "description": "Projet final de la technique TIM : site web vitrine du programme et de ses finissants. Réalisé en Wordpress avec design personnalisé.",
+      "descriptionShort": "Site TIM – vitrine des finissants, UX/UI et design sur mesure.",
+      "connaisance": "Maîtrise d’ACF, organisation de contenu, et amélioration de l’accessibilité.",
+      "acquis": "Expérience complète : maquettes, développement, mise en ligne, gestion de projet.",
+      "function": [
+        "Site vitrine complet",
+        "Gestion du contenu via ACF",
+        "Design UX/UI personnalisé"
       ],
-      "technologie": ["Wordpress", "Php", "Sass", "Css", "Figma"],
+      "technologie": [
+        "Wordpress",
+        "Php",
+        "Sass",
+        "Css",
+        "Figma"
+      ],
       "url": "",
       "image": {
         "desktop": [
@@ -94,18 +99,23 @@
     },
     {
       "id": 4,
-      "name": "Brulerie TIM",
-      "description": "Lors de ma technique, j'avais comme mandant de réaliser un site web fictif concernant une brulerie de café. Design et intégration réalisé par moi, il était question d'intégrer différents contenus qui peuvent survenir dans le marché du travail, par exemple : un login, une vitrine de café, etc. J'ai appris sur le design pixel perfect et de reproduire celui-ci à l'aide du scss.",
-      "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
-      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
-      
-        "function":[
-        "Hoster un serveur !",
-        "Explorer l'achat d'un nom de domaine",
-        "Refonte d'un site web existant"
+      "name": "Brûlerie TIM",
+      "description": "Site web fictif d'une brûlerie de café avec interface de connexion, boutique, et contenus dynamiques. Projet d’étude technique.",
+      "descriptionShort": "Site café fictif avec interface de connexion et produits dynamiques.",
+      "connaisance": "Design pixel-perfect, reproduction fidèle en SCss, composants modulaires.",
+      "acquis": "Intégration complète d’un thème Wordpress avec logique dynamique front-end.",
+      "function": [
+        "Création d'une boutique fictive",
+        "Connexion utilisateur",
+        "Développement modulaire"
       ],
-      "technologie": ["Php", "Sass", "Css", "Atomic", "Figma"],
+      "technologie": [
+        "Php",
+        "Sass",
+        "Css",
+        "Atomic",
+        "Figma"
+      ],
       "url": "https://folksrh.com/",
       "image": {
         "desktop": [
@@ -121,16 +131,21 @@
     {
       "id": 5,
       "name": "Pastèque",
-      "description": "Création d'un site web ayant comme thème une vitrine de livre. Faits en équipe de quatre personnes, nous avions comme mandat de réaliser les maquettes et par la suite les reproduires en utilisant Laravel. Ce site web fut le premier projet avec beaucoup de back-end dont j'étais le responsable. Création du compte, connexion au compte, ajoutée des livres au panier, envoie d'un reçu à l'adresse enregistrée. Il fut question de développer un CRUD et une database pour tous ses livres.  ",
-      "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
-      "acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
-      "function":[
-        "Hoster un serveur !",
-        "Explorer l'achat d'un nom de domaine",
-        "Refonte d'un site web existant"
+      "description": "Site web de vitrine de livres fait en équipe de 4 avec Laravel. Responsable du backend, CRUD complet, panier, et envoi de courriel.",
+      "descriptionShort": "Site Laravel pour vente de livres avec panier, back-end complet.",
+      "connaisance": "Création d’API, gestion du state utilisateur, sécurité des formulaires.",
+      "acquis": "Laravel, architecture MVC, base de données relationnelle et logique de commande.",
+      "function": [
+        "Développement Laravel",
+        "Connexion / panier / CRUD",
+        "Gestion base de données"
       ],
-      "technologie": ["Php", "Sass", "Css", "Laravel"],
+      "technologie": [
+        "Php",
+        "Sass",
+        "Css",
+        "Laravel"
+      ],
       "url": "https://folksrh.com/",
       "image": {
         "desktop": [
@@ -141,32 +156,36 @@
           "/images/pasteque/pasteque_mobile_1.jpg",
           "/images/pasteque/pasteque_mobile_2.jpg"
         ],
-        "couverture": "/images/pasteque/pasteque_couverture.jpg",
-        "description": [""]
+        "couverture": "/images/pasteque/pasteque_couverture.jpg"
       }
     },
     {
       "id": 6,
       "name": "Pagaie Québec",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "descriptionShort": "A l'emploi pour l'entreprise, j'ai eu comme mission de réorganiser le scss/css et d'ajouter des nouveaux éléments aux demandes de l'équipe marketing.",
-      "connaisance": "Lors de ce projet j'ai aprris x and y things.",
-      "function":[
-        "Hoster un serveur !",
-        "Explorer l'achat d'un nom de domaine",
-        "Refonte d'un site web existant"
-      ],"acquis": "Le plus grand défi de ce projet était de réorganiser le scss/css pour que le tout soit plus facile à comprendre pour les autres développeurs. Le tout en respectant les demandes de l'équipe marketing. Le tout en utilisant un custom template de wordpress.",
-      "technologie": ["Laravel", "Php", "Sass", "Css", "Figma"],
+      "description": "Prototype de site web pour un organisme de sport nautique avec design adaptatif, galeries et éléments dynamiques.",
+      "descriptionShort": "Site Pagaie Québec – galerie et contenu dynamique pour organisme.",
+      "connaisance": "Maîtrise du responsive, structuration du contenu, et intégration rapide.",
+      "acquis": "Expérience pratique avec Laravel, animations légères et gestion d’images.",
+      "function": [
+        "Maquettes responsives",
+        "Organisation du contenu",
+        "Prototype institutionnel"
+      ],
+      "technologie": [
+        "Laravel",
+        "Php",
+        "Sass",
+        "Css",
+        "Figma"
+      ],
       "url": "https://folksrh.com/",
-      "mainImage": "/images/pasteque/pasteque_couverture.jpg",
       "image": {
         "desktop": [
           "/images/pagaie/pagaie_qc_2.jpg",
           "/images/pagaie/pagaie_qc_1.jpg",
           "/images/pagaie/pagaie_qc_3.jpg"
         ],
-        "couverture": "/images/pagaie/pagaie_couverture.jpg",
-        "description": [""]
+        "couverture": "/images/pagaie/pagaie_couverture.jpg"
       }
     }
   ],
@@ -257,11 +276,6 @@
   ],
   "reseaux": [
     {
-      "name": "Youtube",
-      "url": "https://www.youtube.com/channel/UCv5RkJS4JeWlpIR7YqRvifQ",
-      "color": "rgba(255, 0, 0, 0.75)"
-    },
-    {
       "name": "Gmail",
       "url": "mailto:hovington234@gmail.com",
       "color": "rgba(255, 0, 0, 0.75)"
@@ -270,11 +284,6 @@
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/marc-antoine-hovington-043007206/",
       "color": "rgba(0, 114, 177, 0.75)"
-    },
-    {
-      "name": "Facebook",
-      "url": "https://www.facebook.com/marcantoine.hovington.92",
-      "color": "rgba(24, 119, 242, 0.75)"
     },
     {
       "name": "Instagram",

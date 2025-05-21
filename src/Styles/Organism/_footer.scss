@@ -1,74 +1,27 @@
-.o-footer {
-  background-color: $onyx;
-  padding: 20px 0 10px;
-  z-index: 2;
+.footer {
+  padding: 60px 25px 30px;
+  width: 100%;
+  background-color: var(--color-card-bg);
   position: relative;
-  &-small {
-    justify-content: center;
-    display: flex;
-    font-size: 14px;
-    color: $pale-silver;
-    width: 100%;
-    font-weight: bold;
-    flex-wrap: wrap;
-    @media (min-width: $b-mobile) {
-      font-size: 1.3rem;
-    }
-    @media (min-width: $b-desktop) {
-      font-size: 1rem;
-    }
-    &::before {
-      display: block;
-      content: "";
-      position: relative;
-      height: 2vw;
-      width: 100%;
-      @media (min-width: $b-mobile) {
-        height: 3vw;
-      }
-      @media (min-width: $b-desktop) {
-        height: 2vw;
-      }
-    }
+  margin-top: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 90%;
+    height: 16%;
+    background-color: var(--color-primary);
+    z-index: 0;
   }
-  &-icon {
-    width: 8vw;
-    transition: ease-in-out 0.15s;
-    @media (min-width: $b-mobile) {
-      width: 7vw;
-    }
-    @media (min-width: $b-desktop) {
-      width: 2.5vw;
-      margin-top: 25px;
-    }
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-
-  &-social {
-    &-zone {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      justify-content: center;
-      @media (min-width: $b-mobile) {
-        width: 50%;
-        margin: auto;
-        justify-content: space-around;
-      }
-
-      & li {
-        margin: 0 30px;
-        & svg {
-          fill: white;
-          @media (min-width: $b-mobile) {
-            width: 95%;
-            height: 95%;
-          }
-        }
-      }
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 90%;
+    height: 16%;
+    background-color: var(--color-accent);
+    z-index: 0;
   }
 }

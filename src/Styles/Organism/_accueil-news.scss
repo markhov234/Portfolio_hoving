@@ -1,4 +1,6 @@
 .o-accueil {
+  max-width: 95%;
+  margin: auto;
   &-realisation {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@
       flex-direction: column;
       margin: 25px 10px 0;
       gap: 2rem;
+      padding-bottom: 50px;
       @media (min-width: $b-mobile) {
         flex-wrap: wrap;
         flex-direction: row;
@@ -38,7 +41,7 @@
             left: 8px;
             width: 35%;
             height: 84%;
-            background-color: $mango-tango-transparent-55;
+            background-color: var(--color-accent-85);
             z-index: -1;
           }
         }

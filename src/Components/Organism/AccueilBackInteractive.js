@@ -1,9 +1,9 @@
-import React, { useMemo,useEffect, useState, useCallback } from "react";
+import React, { useMemo, useEffect, useState, useCallback } from "react";
 import TriangleBackground from "../Molecule/TriangleBackground";
 import backgroundTriangle from "./../ReactHook/BackgroundTriangle";
 
 const AccueilBackInteractive = () => {
-  const [arrayTriangle] = useState(backgroundTriangle(100));
+  const [arrayTriangle] = useState(backgroundTriangle(50));
 
   const handleScroll = useCallback(() => {
     // handle scroll logic if needed
@@ -31,9 +31,7 @@ const AccueilBackInteractive = () => {
 
   return (
     <aside className="o-accueil-background">
-      <div className="o-imageBackground--zone-desktop">
-        {renderTriangles}
-      </div>
+      <div className="o-imageBackground--zone-desktop">{renderTriangles}</div>
     </aside>
   );
 };

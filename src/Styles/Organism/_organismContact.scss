@@ -148,9 +148,9 @@
       position: relative;
       display: flex;
       transition: ease-in-out 0.3s;
-      background-color: rgba(243, 247, 245, 0.9);
+      background-color: $background-sidebar-transparent-90;
       box-shadow: 4px 5px 7.5px 1px rgba(0, 0, 0, 0.17);
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 0 10px;
       margin: 20px 0;
       &:hover {
@@ -159,7 +159,7 @@
         background-color: $rose-pale-transparent;
       }
       &:active {
-        background-color: $mango-tango-transparent-55;
+        background-color: var(--color-accent-85);
       }
       & a {
         justify-content: center;
