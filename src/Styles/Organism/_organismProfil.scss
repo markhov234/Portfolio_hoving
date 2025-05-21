@@ -1,14 +1,14 @@
 .o-accueil {
   &-presentation {
-    width: 95%;
-    background-color: rgba(243, 247, 245, 0.75);
-    box-shadow: 5px 9px 15.5px -1px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-card-bg);
+    box-shadow: $shadow-generals-01;
     padding: 30px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto 50px;
     z-index: 1;
+    position: relative;
     @media (min-width: $b-mobile) {
       padding: 30px 40px;
     }
@@ -27,7 +27,7 @@
           left: 8px;
           width: 35%;
           height: 65%;
-          background-color: rgba(44, 181, 124, 0.75);
+          background-color: var(--color-primary-75);
           z-index: -1;
         }
       }
@@ -73,7 +73,7 @@
         & span {
           font-weight: 900;
           transition: ease-in-out 0.15s;
-          text-decoration: underline 3px $spanish-viridian-hover;
+          text-decoration: underline 3px var(--color-primary);
           &:hover {
             transition: ease-in-out 0.15s;
             text-decoration: underline 3px $mango-tango;
@@ -99,7 +99,7 @@
     }
     &-image-profil {
       width: 100%;
-      border-radius: 50%;
+      border-radius: 55%;
       box-shadow: 5px 9px 15.5px -1px rgba(0, 0, 0, 0.15);
       transition: 0.25s ease-in;
 
@@ -122,12 +122,12 @@
         left: 0;
         width: 100%;
         height: 65%;
-        background-color: $spanish-viridian;
+        background-color: var(--color-primary);
         z-index: 0;
         transition: ease-in-out 0.3s;
       }
       &:hover::before {
-        background-color: $spanish-viridian-hover;
+        background-color: var(--color-primary-hover);
         transition: ease-in-out 0.3s;
         transform: scale(1.08);
         height: 75%;
@@ -170,8 +170,7 @@
       &-item {
         height: fit-content;
         padding: 2px 5px;
-        border-radius: 20px;
-        background-color: $background-input;
+        background-color: var(--color-primary-35);
         margin: 5px 10px;
         display: flex;
         align-items: center;
@@ -184,6 +183,7 @@
 
         &:hover {
           transform: scale(1.08);
+          border-radius: 2px;
           transition: ease-in-out 0.3s;
           cursor: pointer;
         }

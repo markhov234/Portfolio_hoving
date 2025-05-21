@@ -1,0 +1,75 @@
+$b-mobile: 640px;
+$b-contact: 780px;
+$b-desktop: 1024px;
+$b-large-1200: 1200px;
+$b-large-desktop: 1800px;
+$paddingTop-menu: 6vw;
+
+// Couleurs principals
+$light-mustard: #f7d560;
+$spanish-viridian: #2cb57c;
+$rose: #ef476e;
+$mango-tango: #ed7d3a;
+
+// Couleurs principals Hover
+
+$spanish-viridian-hover: #1c7c54;
+
+$light-mustard-hover: #e4bb37;
+
+$mango-tango-hover: #f5a623;
+
+$rose-hover: #b50e35;
+
+// Backgrounds colors
+$main-background-page: #f7f6f2;
+$main-background-page-dark: #484442;
+$card-background: rgba(243, 247, 245, 0.75);
+$card-background-dark: rgba(100, 100, 96, 0.75);
+$platinum: #e9e3e6;
+
+$platinum-transparent-75: rgba(233, 227, 230, 0.75);
+$platinum-transparent-85: rgba(233, 227, 230, 0.95);
+
+$smokyCharcoal-transparent-75: rgba(53, 50, 51, 0.75);
+
+$pale-silver: #c3baba;
+
+$spanish-viridian-hover-transparent-75: rgb(44, 181, 124, 0.75);
+$spanish-viridian-hover-transparent-35: rgb(44, 181, 124, 0.35);
+
+$light-mustard-transparent-75: rgba(250, 217, 106, 0.75);
+$light-mustard-transparent-35: rgb(247, 213, 96, 0.35);
+
+$spanish-viridian-transparent-35: rgb(44, 181, 124, 0.35);
+$silver-chalice: #b2b2b2;
+$sonic-silver: #736f72;
+$onyx: #36393b;
+$onyx-hover: #4c4e50;
+$onyx-hover-transparent: rgba(54, 57, 59, 0.55);
+
+$mango-tango-transparent-35: rgb(237, 125, 58, 0.35);
+$mango-tango-transparent-55: rgb(237, 125, 58, 0.55);
+$mango-tango-transparent-85: rgb(237, 125, 58, 0.85);
+$mango-tango-transparent-75: rgb(237, 125, 58, 0.75);
+
+$rose-pale: #ef476f;
+$rose-pale-transparent: rgba(239, 71, 111, 0.75);
+$rose-pale-transparent-35: rgba(239, 71, 111, 0.35);
+
+$border-input: #b2b2b2;
+$background-input: #f5f1f3;
+
+$color-text-button-accent-hover: #484442;
+$color-text-button-accent-hover-dark: #e9e2e2;
+
+$background-interior-input: #fdfdfd;
+$background-interior-input-transparent-75: rgb(253, 253, 253, 0.75);
+$background-interior-input-transparent-35: rgb(253, 253, 253, 0.45);
+$background-sidebar-transparent-90: rgba(243, 247, 245, 0.9);
+$background-sidebar-transparent-dark-90: rgba(72, 68, 66, 0.9);
+
+$shadow-bento: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+  rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+$shadow-generals-01: 4px 5px 19.5px 1px rgba(0, 0, 0, 0.17);

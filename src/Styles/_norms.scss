@@ -18,6 +18,9 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   width: breakpoints(phone);
+  background-color: var(--color-bg);
+  transition: background-color 0.2s ease-in;
+  color: var(--color-text);
 }
 .margin {
   margin: 40px;
@@ -34,44 +37,3 @@ body {
   height: 420px;
   overflow: hidden;
 }
-$b-mobile: 640px;
-$b-contact: 780px;
-$b-desktop: 1024px;
-$b-large-1200: 1200px;
-$b-large-desktop: 1800px;
-$paddingTop-menu: 6vw;
-
-// Couleurs principals
-
-$mauve-light: #625f93;
-$mauve-blue: #200ac2;
-$jaune-dark: #fa9e3f;
-$jaune-light: #face52;
-/* Ellipse 4 */
-
-$platinum: #e9e3e6;
-$platinum-transparent-75: rgba(233, 227, 230, 0.75);
-$platinum-transparent-85: rgba(233, 227, 230, 0.95);
-$pale-silver: #c3baba;
-$spanish-viridian: #2cb57c;
-$spanish-viridian-hover: #1c7c54;
-$spanish-viridian-hover-transparent-75: rgb(44, 181, 124, 0.75);
-$silver-chalice: #b2b2b2;
-$sonic-silver: #736f72;
-$onyx: #36393b;
-$onyx-hover: #4c4e50;
-$onyx-hover-transparent: rgba(54, 57, 59, 0.55);
-$mango-tango: #ed7d3a;
-$mango-tango-transparent-55: rgb(237, 125, 58, 0.85);
-$rose-pale: #ef476f;
-$rose-pale-transparent: rgba(239, 71, 111, 0.75);
-$rose-pale-transparent-35: rgba(239, 71, 111, 0.35);
-
-$border-input: #b2b2b2;
-$background-input: #f5f1f3;
-$background-interior-input: #fdfdfd;
-$background-interior-input-transparent-75: rgb(253, 253, 253, 0.75);
-$background-interior-input-transparent-35: rgb(253, 253, 253, 0.45);
-
-$shadow-bento: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-  rgba(90, 125, 188, 0.05) 0px 0.25em 1em;

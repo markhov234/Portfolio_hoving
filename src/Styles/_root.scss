@@ -1,0 +1,55 @@
+:root {
+  --color-bg: #{$main-background-page};
+  --color-card-bg: #{$card-background};
+  --color-text: #1e1e1e;
+
+  --color-primary: #{$spanish-viridian};
+  --color-primary-hover: #{$spanish-viridian-hover};
+  --color-primary-35: #{$spanish-viridian-hover-transparent-35};
+  --color-primary-75: #{$spanish-viridian-hover-transparent-75};
+
+  --color-accent: #{$mango-tango};
+  --color-accent-hover: #{$mango-tango-hover};
+  --color-accent-35: #{$mango-tango-transparent-35};
+  --color-accent-55: #{$mango-tango-transparent-55};
+  --color-accent-75: #{$mango-tango-transparent-75};
+  --color-accent-85: #{$mango-tango-transparent-85};
+
+  --color-text: #{$onyx};
+  --color-text-button-accent: #{$background-input};
+  --color-text-button-accent-hover: #{$color-text-button-accent-hover};
+
+  --menu-background: #{$background-sidebar-transparent-90};
+  --menu-background-toggle: #{$platinum-transparent-75};
+
+  --shadow-bento: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.dark {
+  --color-bg: #{$main-background-page-dark};
+  --color-card-bg: #{$card-background-dark};
+
+  --color-primary: #{$light-mustard};
+  --color-primary-hover: #{$light-mustard-hover};
+  --color-primary-35: #{$light-mustard-transparent-35};
+  --color-primary-75: #{$light-mustard-transparent-75};
+
+  --color-accent: #{$rose};
+  --color-accent-hover: #{$rose-hover};
+
+  --color-accent-35: #{$mango-tango-transparent-35};
+  --color-accent-55: #{$mango-tango-transparent-55};
+  --color-accent-75: #{$mango-tango-transparent-75};
+  --color-accent-85: #{$mango-tango-transparent-85};
+
+  --menu-background: #{$background-sidebar-transparent-dark-90};
+  --menu-background-toggle: #{$smokyCharcoal-transparent-75};
+
+  --color-text: #{$background-input};
+  --color-text-button-accent: #{$background-input};
+  --color-text-button-accent-hover: #{$background-input};
+
+  --shadow-bento: rgba(208, 221, 107, 0.27) 0px 0px 0.25em,
+    rgba(198, 209, 81, 0.05) 0px 0.25em 1em;
+}

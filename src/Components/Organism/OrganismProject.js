@@ -2,7 +2,7 @@ import ProjectsData from "./../../BackEnd/data.json";
 import { useState } from "react";
 import UpwardArrow from "../../Images/upward-arrow.png";
 
-import AccueilRealisationSection from "./Accueil-Realisation-Section";
+import AccueilRealisationSection from "./AccueilRealisationSection";
 
 const OrganismProject = () => {
   const [visibleProjects, setVisibleProjects] = useState(4);

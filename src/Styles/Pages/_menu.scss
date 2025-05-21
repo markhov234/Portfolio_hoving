@@ -1,0 +1,120 @@
+.menu {
+  // position: fixed;
+  // top: 50%;
+  // right: 10px;
+  // padding: 10px;
+  // transform: translateY(-50%);
+  // background: var(--menu-background);
+  // z-index: 1000;
+  // border-radius: 5px;
+  // box-shadow: var(--shadow-bento);
+
+  // version bottom page
+  position: fixed;
+  align-items: center;
+  right: 10px;
+  bottom: 7px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  background: var(--menu-background);
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: var(--shadow-bento);
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    // margin: 1rem 0;
+    position: relative;
+
+    &:hover .menu__label {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+
+    &:hover .hexagon-side {
+      transform: scale(1.2);
+      background-color: $background-interior-input;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text);
+    position: relative;
+  }
+
+  .hexagon-side {
+    width: 50px;
+    height: 50px;
+    background: $background-interior-input;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  .hexagon-inside {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    right: -9px;
+    background: var(--color-primary);
+    color: black;
+    font-weight: 600;
+    padding: 12px 55px 12px 30px;
+    // border-radius: 10px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    top: -67px;
+    width: 150px;
+    transform: translateX(-10px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+    rotate: 59deg;
+    z-index: 1;
+  }
+
+  &__toggle-theme {
+    background-color: var(--menu-background-toggle);
+    margin-right: 10px;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    position: relative;
+    &-button {
+      width: 25px;
+      height: 20px;
+      background-color: var(--color-primary-75);
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      transition: all 0.3s ease;
+
+      &.dark {
+        right: 0;
+        left: null;
+      }
+    }
+  }
+}
